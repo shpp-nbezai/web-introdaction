@@ -1,0 +1,75 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex: auto;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 960px;
+    height: 100%;
+/*    margin: 0 auto;
+/*    background-color: cornflowerblue;*/
+}
+.header{
+    height: 65px;
+    text-align: right;
+    background-color: white;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  min-height: 20vh;
+  background-color: rgb(26,188,156);
+}
+
+.aside{
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh;
+    background-color: white;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    min-height: 20vh;
+    background-color: rgb(26,188,156);
+}
+.nav{
+    padding: 15vw;
+  flex: 0 0 auto;
+  color:black;
+}
+
+.section{
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.footer{
+  background-color: grey;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin-left: 50px;
+    width: auto;
+    height: auto;
+}
+
+.navigationMenu{
+    flex: 1 1 auto;
+    text-decoration: none;
+}
