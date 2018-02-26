@@ -4,62 +4,161 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
-<body class="flex-container">
+<body>
+    <div class="flex-container">
 
-  <header class="header">
-      <div class="container">
-          <div id="logo">
-              <img src="img/logo.png" alt="logo">
+          <header class="header">
+              <div class="container">
+                  <div id="logo">
+                      <img src="img/logo.png" alt="logo">
+                  </div>
+                  <div class="navigation-menu">
+                      <a href="index.html" class="menu-caption">PRODUCTS</a>
+                      <a href="index.html" class="menu-caption">ABOUT US</a>
+                      <a href="index.html" class="menu-caption">CONTACT US</a>
+                  </div>
+              </div>
+          </header>
+
+          <div class="content">
+              <div class="container">
+                  <nav class="nav">
+                      <img src="img/phone.png"  alt="phone" id="phone">
+                  </nav>
+                  <section class="section">
+                      <h2>Our awesome app is ready to use!</h2>
+                      <br>
+                      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                      vero laboriosam adipisci dolores aut blanditiis necessitatibus
+                      inventore, eius fuga porro recusandae sint quis aliquam nam
+                      jure nihil beatae, atque quod!</p>
+                      <form>
+                          <button class="frame-button buy-button"> Buy now! </button>
+                      </form>
+                  </section>
+              </div>
           </div>
-          <div class="navigationMenu">
-              <a href="index.html" >PRODUCTS</a>
-              <a href="index.html" >ABOUT US</a>
-              <a href="index.html" >CONTACT US</a>
+
+          <div class="aside">
+              <div class="container-3-column">
+                    <div>
+                        <img src="img\arrows.png" class="icons-img">
+                        <p class="text-center text-font">
+                            <h4>Web development</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                            vero laboriosam adipisci dolores aut blanditiis necessitatibus
+                            inventore, eius fuga porro recusandae sint quis aliquam nam
+                            jure nihil beatae, atque quod!
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img\android.png" class="icons-img">
+                        <p class="text-center text-font" >
+                            <h4>Mobile development</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                            vero laboriosam adipisci dolores aut blanditiis necessitatibus
+                            inventore, eius fuga porro recusandae sint quis aliquam nam
+                            jure nihil beatae, atque quod!
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img\cloud.png" class="icons-img">
+                        <p class="text-center ">
+                            <h4>Hightload</h4>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                            vero laboriosam adipisci dolores aut blanditiis necessitatibus
+                            inventore, eius fuga porro recusandae sint quis aliquam nam
+                            jure nihil beatae, atque quod!
+                        </p>
+                    </div>
+              </div>
           </div>
-      </div>
-  </header>
 
-  <div class="content">
-      <div class="container">
-
-          <nav class="nav">
-              <img src="img/phone.png" width="50%" alt="phone" align="left">
-          </nav>
-
-          <section class="section">
-            <h1>Our awesome app is ready to use!</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur</p>
-              <p>vero laboriosam adipisci dolores aut blanditiis necessitatibus</p>
-              <p>inventore, eius fuga porro recusandae sint quis aliquam nam</p>
-              <p>jure nihil beatae, atque quod!</p>
-          </section>
-
-      </div>
-  </div>
-
-  <div class="aside">
-      <div class="container">
-
-          <h1>London</h1>
-          <p>London is the capital city of England. It is the most populous city
-              in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-          <p>Standing on the River Thames, London has been a major settlement
-              for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-
-      </div>
-  </div>
-
-  <div class="inputs">
-      <div class="container">
-
-      </div>
-  </div>
-
-  <footer class="footer">
-      <div class="container">
-          <h1>Footer</h1>
-      </div>
-  </footer>
-
+          <div class="inputs">
+              <div class="container-column">
+                  <div class="text-font">
+                      <h1>Contact us!</h1>
+                  </div>
+                  <form>
+                      Input Type Text<br>
+                      <input type="text" name="input-text"><br>
+                      Input Type Password<br>
+                      <input type="password" name="input-password"><br>
+                      Input Type Submit<br>
+                      <input type="submit" value="input-submit"><br>
+                      Input Type Reset<br>
+                      <input type="reset"><br>
+                      Input Type Radio<br>
+                      <div class="radio-frame">
+                          <input type="radio" name="input-radio" value="One"> One<br>
+                          <input type="radio" name="input-radio" value="Two"> Two<br>
+                          <input type="radio" name="input-radio" value="Three"> Three<br>
+                      </div>
+                      <br>
+                      Input Type Checkbox<br>
+                      <div class="radio-frame">
+                          <input type="checkbox" name="input-checkbox" value="One"> One<br>
+                          <input type="checkbox" name="input-checkbox" value="Two"> Two<br>
+                          <input type="checkbox" name="input-checkbox" value="Three"> Three<br>
+                      </div>
+                      <br>
+                      Input Type Button<br>
+                      <input type="button" onclick="alert('Input-button!')" value="Input-button!"><br>
+                      Input Type Color<br>
+                      <input type="color" name="favcolor"><br>
+                      Input Type Data<br>
+                      <input type="date" name="input-data"><br>
+                      Input Type Datatime-local<br>
+                      <input type="datetime-local" name="input-datetime-local"><br>
+                      Input Type Email<br>
+                      <input type="email" name="input-email"><br>
+                      Input Type Month<br>
+                      <input type="month" name="input-month"><br>
+                      Input Type Number(1-50)<br>
+                      <input type="number" name="input-number" min="1" max="50"><br>
+                      Input Type Number Restriction(0-100/10)<br>
+                      <input type="number" name="points" min="0" max="100" step="10" value="30"><br>
+                      Input Type Range<br>
+                      <input type="range" name="inputs-range" min="0" max="10"><br>
+                      <br>
+                      <div class="radio-frame">
+                          Input Type Search<br>
+                          <input type="search" name="input-googlesearch"><br>
+                          <input type="submit">
+                      </div>
+                      <br>
+                      <div class="radio-frame">
+                          Input Type Tel<br>
+                          <input type="tel" name="input-tel"><br>
+                          <p><b>Note:</b> type="tel" is only supported in Safari 8 and newer versions.</p>
+                      </div>
+                      <br>
+                      <div class="radio-frame">
+                          Input Type Time<br>
+                          Select a time:
+                          <input type="time" name="usr_time">
+                          <input type="submit">
+                          <p><strong>Note:</strong> type="time" is not supported in Internet Explorer 12 and earlier versions.</p>
+                      </div>
+                      <br>
+                      <div class="radio-frame">
+                          Input Type Url<br>
+                          Add your url:<br>
+                          <input type="url" name="input-url"><br>
+                          <input type="submit">
+                          <p><strong>Note:</strong> type="time" is not supported in Internet Explorer 12 and earlier versions.</p>
+                      </div>
+                      <br>
+                      Input Type Week<br>
+                      <input type="week" name="input-week"><br>
+                      <input type="submit">
+                      <p><strong>Note:</strong> type="week" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+                  </form>
+                  <form>
+                      <button class="frame-button send-email-button"> Send email! </button>
+                  </form>
+              </div>
+          </div>
+    </div>
 </body>
 </html>
