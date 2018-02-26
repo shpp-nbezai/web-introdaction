@@ -5,6 +5,7 @@
     min-height: 100vh;
     flex: auto;
 }
+
 .header{
   background-color: green;
 }
@@ -14,6 +15,7 @@
   flex-direction: row;
   min-height: 75vh;
 }
+
 .nav{
   flex: 0 0 200px;
   background-color: blue;
