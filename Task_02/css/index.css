@@ -147,7 +147,7 @@
     text-align: center;
 }
 
-.radio-frame {
+.frame {
     background-color: transparent;
     display: inline-block;
     border: 1px solid white;
@@ -157,7 +157,6 @@
 }
 
 .icons-img{
-    width: 20%;
-    border-radius: 150px;
+    border-radius: 100%;
     border: 3px solid green;
 }
