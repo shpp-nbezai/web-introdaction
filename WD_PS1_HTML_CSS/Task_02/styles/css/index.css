@@ -88,7 +88,7 @@
     background-color: grey;
 }
 
-#logo{
+.logo{
     display: flex;
     flex-direction: row;
     flex: 0 0 auto;
@@ -110,7 +110,7 @@
     padding-right: 7%;
 }
 
-#phone{
+.phone{
     alignment: left;
     width: 33%;
     padding-left: 15%;
@@ -147,16 +147,28 @@
     text-align: center;
 }
 
+.content-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
 .frame {
     background-color: transparent;
     display: inline-block;
     border: 1px solid white;
     border-radius: 4px;
     padding: 10px;
+    margin: 5px 0;
     text-align: left;
 }
 
-.icons-img{
+.icon-background{
     border-radius: 100%;
-    border: 3px solid green;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 7.5;
+    background-color: rgb(26,188,156);
 }

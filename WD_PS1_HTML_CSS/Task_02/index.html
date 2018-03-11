@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/index.css">
+    <link rel="stylesheet" href="styles/vendors/font-awesome/css/font-awesome.min.css">
   </head>
 <body>
     <div class="flex-container">
 
           <header class="header">
               <div class="container">
-                  <div id="logo">
-                      <img src="img/logo.png" alt="logo">
+                  <div class="logo">
+                      <a href="index.html"><img src="styles/images/logo.png" alt="logo"></a>
                   </div>
                   <div class="navigation-menu">
                       <a href="index.html" class="menu-caption">PRODUCTS</a>
@@ -24,7 +24,7 @@
           <div class="content">
               <div class="container">
                   <nav class="nav">
-                      <img src="img/phone.png"  alt="phone" id="phone">
+                      <img src="styles/images/phone.png"  alt="phone" class="phone">
                   </nav>
                   <section class="section">
                       <h2>Our awesome app is ready to use!</h2>
@@ -43,20 +43,30 @@
           <div class="aside">
               <div class="container-3-column">
                     <div>
-                        <i class="fa fa-camera-retro fa-5x icons-img"></i>
-                        <p class="text-center text-font">
+                        <div class="content-center">
+                            <div class="icon-background">
+                                <i class="fa fa-camera-retro fa-3x"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-center text-font">
                             <h4>Web development</h4>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
                             vero laboriosam adipisci dolores aut blanditiis necessitatibus
                             inventore, eius fuga porro recusandae sint quis aliquam nam
                             jure nihil beatae, atque quod!
-                        </p>
+                            </p>
+                        </div>
                     </div>
                     <div>
-                        <i class="fa fa-cog fa-spin fa-5x fa-fw icons-img"></i>
+                        <div class="content-center">
+                            <div class="icon-background">
+                                <i class="fa fa-cog fa-spin fa-3x"></i>
+                            </div>
+                        </div>
                         <span class="sr-only">Загрузка...</span>
                         <br>
-                        <p class="text-center text-font" >
+                        <p class="text-center text-font">
                             <h4>Mobile development</h4>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
                             vero laboriosam adipisci dolores aut blanditiis necessitatibus
@@ -65,7 +75,11 @@
                         </p>
                     </div>
                     <div>
-                        <i class="fa fa-user-circle fa-5x icons-img" aria-hidden="true"></i>
+                        <div class="content-center">
+                            <div class="icon-background">
+                                <i class="fa fa-user-circle fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
                         <p class="text-center ">
                             <h4>Hightload</h4>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
@@ -83,22 +97,25 @@
                       <h1>Contact us!</h1>
                   </div>
                   <form>
+                      <input type="text" name="input-text" value="Type here your name, please" size="60"><br>
+                      <input type="text" name="input-text" value="Type here your email, please" size="60"><br>
+                      <input type="text" name="input-text" value="Type here your phone, please" size="60"><br>
+                      <input type="text" name="input-text" value="Ask your question" size="60" ><br>
+                      <textarea name="input-textarea" value="Ask your question" rows="4" cols="62"></textarea><br>
+                      <br>
                       <div class="frame">
-                          Input Type Text<br>
-                          <input type="text" name="input-text"><br>
-                      </div>
-                      <div class="frame">
-                          Input Type Password<br>
-                          <input type="password" name="input-password"><br>
+                          Input Type password<br>
+                          <input type="password" name="input-password">
                       </div>
                       <br>
                       <div class="frame">
-                          Input Type Submit<br>
-                          <input type="submit" value="input-submit"><br>
+                          Input Type submit<br>
+                          <input type="submit" value="input-submit">
                       </div>
+                      <br>
                       <div class="frame">
-                          Input Type Reset<br>
-                          <input type="reset"><br>
+                          Input Type reset<br>
+                          <input type="reset">
                       </div>
                       <br>
                       <div class="frame">
@@ -107,6 +124,7 @@
                           <input type="radio" name="input-radio" value="Two"> Two<br>
                           <input type="radio" name="input-radio" value="Three"> Three<br>
                       </div>
+                      <br>
                       <div class="frame">
                           Input Type Checkbox<br>
                           <input type="checkbox" name="input-checkbox" value="One"> One<br>
@@ -118,6 +136,7 @@
                           Input Type Button<br>
                           <input type="button" onclick="alert('Input-button!')" value="Input-button!"><br>
                       </div>
+                      <br>
                       <div class="frame">
                           Input Type Color<br>
                           <input type="color" name="favcolor"><br>
@@ -127,8 +146,9 @@
                           Input Type Data<br>
                           <input type="date" name="input-data"><br>
                       </div>
+                      <br>
                       <div class="frame">
-                          Input Type Datatime-local<br>
+                          Input Type Data-local<br>
                           <input type="datetime-local" name="input-datetime-local"><br>
                       </div>
                       <br>
@@ -136,6 +156,7 @@
                           Input Type Email<br>
                           <input type="email" name="input-email"><br>
                       </div>
+                      <br>
                       <div class="frame">
                           Input Type Month<br>
                           <input type="month" name="input-month"><br>
@@ -145,6 +166,7 @@
                           Input Type Number(1-50)<br>
                           <input type="number" name="input-number" min="1" max="50"><br>
                       </div>
+                      <br>
                       <div class="frame">
                           Input Type Number Restriction(0-100/10)<br>
                           <input type="number" name="points" min="0" max="100" step="10" value="30"><br>
@@ -154,6 +176,7 @@
                           Input Type Range<br>
                           <input type="range" name="inputs-range" min="0" max="10"><br>
                       </div>
+                      <br>
                       <div class="frame">
                           Input Type Search<br>
                           <input type="search" name="input-googlesearch"><br>
