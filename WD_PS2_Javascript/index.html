@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+<body>
+    <div class="flex-container">
+        <header class="header">
+            <h1> Header</h1>
+        </header>
+        <div class="content">
+            <nav class="nav">
+            </nav>
+            <section class="section">
+                <script src="js/main.js"></script>
+
+                <h2>WD_PS2 Javascript (Basics)</h2>
+
+                <script>
+                  getResultTask03();
+                </script>
+                <button class="accordion">Task 01</button>
+                <div class="panel" id = "content_task_01">
+                  <script>
+                    getResultTask01();
+                  </script>
+                </div>
+
+                <button class="accordion">Task 02</button>
+                <div class="panel" id = "content_task_02">
+                  <script>
+                    getResultTask02();
+                  </script>
+                </div>
+
+                <button class="accordion">Task 03</button>
+                <div class="panel" id = "content_task_03">
+                  <script>
+                    getResultTask03();
+                  </script>
+                </div>
+
+                <button class="accordion">Task 04</button>
+                <div class="panel" id = "content_task_04">
+                  <input type = "text" value = "Enter time on a second, lpz" id = "secondsInput" size="60"><br>
+                  <button onclick = "getResultTask04()">Format seconds(hh:mm:ss)</button>
+                  <br>
+                  <label id = "secondsConvertErrorMsg" hidden></label>
+                  The set time is: <label id = "resultTask04Label"></label>
+                </div>
+
+                <button class="accordion">Task 05</button>
+                <div class="panel" id = "content_task_05">
+                  <input type = "text" value = "Enter the student's age, lpz" id = "ageInput" size="60"><br>
+                  <button onclick = "getResultTask05()">Format age</button>
+                  <br>
+                  <label id = "studentAgeErrorMsg" hidden></label>
+                  Age is: <label id = "resultTask05Label"></label>
+                </div>
+
+                <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+                </script>
+            </section>
+        </div>
+        <footer class="footer">
+            <h1>Footer</h1>
+        </footer>
+    </div>
+</body>
+</html>
