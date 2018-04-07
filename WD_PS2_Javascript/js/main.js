@@ -1,5 +1,6 @@
 function getResultTask01(){
 	let sum = 0;
+  
 	for(let i = -1000; i <= 1000; i++){
 		sum = sum + i;
 	}
@@ -8,6 +9,7 @@ function getResultTask01(){
 
 function getResultTask02(){
 	let sum = 0;
+
 	for(let i = -1000; i <= 1000; i++){
 		if (i % 10 == (2 || 3 || 7 || -2 || -3 || -7 )){
 				sum = sum + i;
@@ -19,19 +21,13 @@ function getResultTask02(){
 function getResultTask03(){
   document.getElementById("content_task_03").innerHTML = '';
 	var sum = "*";
+
 	for(i = 0; i < 50; i++){
 	    document.getElementById("content_task_03").innerHTML += (sum + "<br>");
 	    sum = sum + "*";
 	}
 
 }
-
-function isInt(value) {
-  return !isNaN(value) &&
-         parseInt(Number(value)) == value &&
-         !isNaN(parseInt(value, 10));
-}
-
 
 function validateNumber(inputNumber, errorElementId){
   const isValidInt = x => x && !isNaN(x) && Number.isInteger(x) || x === 0;
@@ -66,10 +62,10 @@ function getResultTask04(){
 }
 
 function getResultTask05(){
-
   const ID_RESULT_TASK05 = document.getElementById("resultTask05Label");
   let parseAge = parseInt(document.getElementById("ageInput").value);
   let resultAge;
+
   if (validateNumber(parseAge, "studentAgeErrorMsg")){
     if (parseAge <= 0) showErrorMessage("A student must already be born.", "studentAgeErrorMsg");
     if (parseAge > 100) showErrorMessage("Students do not live that much :-D", "studentAgeErrorMsg");
