@@ -59,6 +59,18 @@
                   Age is: <label id = "resultTask05Label"></label>
                 </div>
 
+                <button class="accordion">Task 06</button>
+                <div class="panel" id = "content_task_06">
+                  Enter dates in the format "October 13, 2014 11:13:00":<br>
+                  <input type = "text" value = "October 13, 2014 11:13:00" id = "dateCompareFirstInput" size="60"><br>
+                  <input type = "text" value = "October 13, 2014 11:13:00" id = "dateCompareSecondInput" size="60"><br>
+
+                  <button onclick = "getResultTask06()">Format age</button>
+                  <br>
+                  <label id = "compareDateErrorMsg" hidden></label>
+                  Time is: <label id = "resultTask06Label"></label>
+                </div>
+
                 <script>
                 var acc = document.getElementsByClassName("accordion");
                 var i;

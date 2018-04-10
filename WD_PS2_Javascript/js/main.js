@@ -46,16 +46,23 @@ function showErrorMessage(message, elementId){
   document.getElementById(elementId).style.display = "block";
 }
 
-function getResultTask04(){
-  let seconds = parseInt(document.getElementById("secondsInput").value);
+function secondsToTime(seconds){
   const HOURS = 3600, MINUTES = 60;
   let resultSeconds, resultHours, resultMinutes, resultTime;
 
+  resultHours = Math.floor(seconds / HOURS);
+  resultMinutes = Math.floor((seconds - (resultHours * HOURS)) / MINUTES);
+  resultSeconds = seconds - (resultHours * HOURS) - (resultMinutes * MINUTES);
+  resultTime = resultHours + ':' + resultMinutes + ':' + resultSeconds;
+
+  return resultTime;
+}
+
+function getResultTask04(){
+  let seconds = parseInt(document.getElementById("secondsInput").value);
+  let resultTime;
   if (validateNumber(seconds, "secondsConvertErrorMsg")){
-    resultHours = Math.floor(seconds / HOURS);
-    resultMinutes = Math.floor((seconds - (resultHours * HOURS)) / MINUTES);
-    resultSeconds = seconds - (resultHours * HOURS) - (resultMinutes * MINUTES);
-    resultTime = resultHours + ':' + resultMinutes + ':' + resultSeconds;
+      resultTime = secondsToTime(seconds);
   }
   document.getElementById("resultTask04Label").innerText = resultTime;
 
@@ -86,6 +93,14 @@ function getResultTask05(){
           ID_RESULT_TASK05.innerText = parseAge + " years";
         }
   }
+}
+
+function getResultTask06(){
+  let parseDateFirst = Date.parse(document.getElementById("dateCompareFirstInput").value);
+  let parseDateSecond = Date.parse(document.getElementById("dateCompareSecondInput").value);
+
+  //if (parseDateFirst )
+  document.getElementById("resultTask06Label").innerText = new Date (parseDateFirst - parseDateSecond);  
 }
 
 //getLinks.fiter(link => !link);
