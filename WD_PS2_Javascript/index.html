@@ -64,11 +64,43 @@
                   Enter dates in the format "October 13, 2014 11:13:00":<br>
                   <input type = "text" value = "October 13, 2014 11:13:00" id = "dateCompareFirstInput" size="60"><br>
                   <input type = "text" value = "October 13, 2014 11:13:00" id = "dateCompareSecondInput" size="60"><br>
-
-                  <button onclick = "getResultTask06()">Format age</button>
-                  <br>
                   <label id = "compareDateErrorMsg" hidden></label>
-                  Time is: <label id = "resultTask06Label"></label>
+
+                  <button onclick = "getResultTask06()">Calculate the time interval.</button>
+                  <br>
+                  Between dates passed: <label id = "resultTask06Label"></label>
+                </div>
+
+                <button class="accordion">Task 07</button>
+                <div class="panel" id = "content_task_07">
+                  Enter the date like 2014-12-31, lpz: <br>
+                  <input type = "text" value = "2014-12-31" id = "dateZodiacInput" size="60"><br>
+                  <button onclick = "getResultTask07()">Get my zodiac</button>
+                  <br>
+                  <label id = "zodiacErrorMsg" hidden></label>
+                  Zodiac is: <label id = "resultTask07Label"></label><br>
+                  <img id = "zodiacImg" src = "">
+                </div>
+
+                <button class="accordion">Task 08</button>
+                <div class="panel" id = "content_task_08">
+                  Enter the size of the chessboard:<br>
+                  <input type = "text" value = "2" id = "rowChessBoardInput" size="60"><br>
+                  <input type = "text" value = "2" id = "colChessBoardInput" size="60"><br>
+                  <label id = "chessErrorMsg" hidden></label>
+
+                  <button onclick = "getResultTask08()">Draw a chessboard.</button>
+                  <br>
+                  <div id = "resultTask08"></div>
+                </div>
+
+                <button class="accordion">Task 10</button>
+                <div class="panel" id = "content_task_10">
+                  <input type = "text" value = "Enter the number, lpz" id = "numberInput" size="60"><br>
+                  <button onclick = "getResultTask10()">Calculate digit from number</button>
+                  <br>
+                  <label id = "calculateDigitErrorMsg" hidden></label>
+                  Sum is: <label id = "resultTask10Label"></label>
                 </div>
 
                 <script>
