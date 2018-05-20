@@ -56,3 +56,28 @@
     background-color: white;
     overflow: hidden;
 }
+
+.chessBoardRow{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+}
+
+.chessBoardCol{
+    flex: 0 0 auto;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+#resultTask08{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: pink;
+    height: 480px;
+    width: 480px;
+    min-height: 480px;
+    min-width: 480px;
+
+}
