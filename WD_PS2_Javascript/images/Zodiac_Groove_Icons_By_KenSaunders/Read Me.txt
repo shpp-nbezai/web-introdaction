@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 Thanks for downloading Zodiac Groove Icons
@@ -14,3 +15,21 @@ www.MouseRunner.com
 
 Contact the author
 KenSaunders@MouseRunner.com
+=======
+
+
+Thanks for downloading Zodiac Groove Icons
+------------------------------------------------------------------------------------
+The graphics contained in the download may not be redistributed or displayed on web sites
+without the expressed written permission of their owner. They are for personal use only.
+------------------------------------------------------------------------------------
+Graphics created by:
+Ken Saunders- A.K.A. Mouse Runner
+MouseRunner.deviantART.com
+------------------------------------------------------------------------------------
+Visit MouseRunner.com for all free graphics and resources.
+www.MouseRunner.com
+
+Contact the author
+KenSaunders@MouseRunner.com
+>>>>>>> 274fb68b78bdf2a204e5c0705eddc2d8964b89ee

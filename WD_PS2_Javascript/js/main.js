@@ -22,8 +22,12 @@ function getResultTask02(){
 }
 
 function getResultTask03(){
+<<<<<<< HEAD
 	let resultTask03 = document.getElementById("content_task_03");
 	resultTask03.innerText = ' ';
+=======
+	document.getElementById("content_task_03").innerText = ' ';
+>>>>>>> 274fb68b78bdf2a204e5c0705eddc2d8964b89ee
 	var sum = "*";
 	let resultString = '';
 	for(i = 0; i < 50; i++){
@@ -227,6 +231,7 @@ function getResultTask07(){
 }
 
 function getResultTask08(){
+<<<<<<< HEAD
 
   let resultDiv = document.getElementById("resultTask08");
   const CHESS_BOARD_SIZE = 480;
@@ -275,6 +280,18 @@ function getResultTask08(){
 
   }
 
+=======
+  const shessFlag = {
+    flag = true;
+  };
+
+  shessFlag.flipFlag(){
+    flag = !flag;
+  }
+
+  shessFlag.flipFlag();
+  console.log(shessFlag.flag);
+>>>>>>> 274fb68b78bdf2a204e5c0705eddc2d8964b89ee
 }
 
 function sumDigitOnNumber(number){
@@ -285,6 +302,7 @@ function sumDigitOnNumber(number){
   } else {
     resultSum = number % 10 + sumDigitOnNumber(Math.floor(number / 10));
   }
+<<<<<<< HEAD
   return resultSum;
 }
 
@@ -315,6 +333,9 @@ function getResultTask09(){
 		resultFloor = Math.round(parseflatsResult / parseFlats);
 	}
   document.getElementById("resultTask09Label").innerText = `Entrances = ${resultEntrances}, Floors = ${resultFloor}`;
+=======
+  return resultSum;  
+>>>>>>> 274fb68b78bdf2a204e5c0705eddc2d8964b89ee
 }
 
 function getResultTask10(){
@@ -327,7 +348,11 @@ function getResultTask10(){
 }
 
 
+<<<<<<< HEAD
 //getLinks.fiter(link => !!link);
+=======
+//getLinks.fiter(link => !link);
+>>>>>>> 274fb68b78bdf2a204e5c0705eddc2d8964b89ee
 // split
 // filter
 // map
