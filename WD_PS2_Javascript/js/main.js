@@ -14,18 +14,17 @@ function getResultTask02(){
 		lastDigit = i % 10;
 		if ( lastDigit === 2 || lastDigit === 3 ||
 			   lastDigit === 7 || lastDigit === -2 ||
-				 lastDigit ===-3 || lastDigit === -7 ){
-				sum = sum + i;
+				 lastDigit === -3 || lastDigit === -7 ){
+				sum += i;
 		}
 	}
 	document.getElementById("content_task_02").innerText = "Result = " + sum;
 }
 
 function getResultTask03(){
-  let resultTask03 = document.getElementById("content_task_03");
+	let resultTask03 = document.getElementById("content_task_03");
 	resultTask03.innerText = ' ';
-  document.getElementById("content_task_03").innerText = ' ';
-	var sum = "*";
+	let sum = "*";
 	let resultString = '';
 	for(i = 0; i < 50; i++){
 			resultString += (sum + "<br>");
@@ -35,20 +34,23 @@ function getResultTask03(){
 }
 
 function validateNumber(inputNumber, errorElementId){
+
   const isValidInt = x => x && !isNaN(x) && Number.isInteger(x) || x === 0;
+
   document.getElementById(errorElementId).style.display = "none";
   const MAX_NUMBER_LIMIT = 1000000000;
 
   if (isValidInt(inputNumber)){
       if (inputNumber >= 0 && inputNumber < MAX_NUMBER_LIMIT){
         return true;
-      } else showErrorMessage("You entered too much or a negative number...", errorElementId);
-  } else showErrorMessage("Your data may by number...", errorElementId);
+      } else showErrorMessage("Вы ввели слишком большое или отрицательное число...", errorElementId);
+  } else showErrorMessage("Нужно ввести только число...", errorElementId);
 }
 
 function showErrorMessage(message, elementId){
-  document.getElementById(elementId).innerText = message;
-  document.getElementById(elementId).style.display = "block";
+	let getElement = document.getElementById(elementId);
+  getElement.innerText = message;
+  getElement.style.display = "block";
 }
 
 function secondsToTime(seconds){
@@ -58,6 +60,15 @@ function secondsToTime(seconds){
   resultHours = Math.floor(seconds / HOURS);
   resultMinutes = Math.floor((seconds - (resultHours * HOURS)) / MINUTES);
   resultSeconds = seconds - (resultHours * HOURS) - (resultMinutes * MINUTES);
+	if (resultHours < 10) {
+		resultHours = "0" + resultHours ;
+	}
+	if (resultMinutes < 10){
+		resultMinutes = "0" + resultMinutes;
+	}
+	if (resultSeconds < 10){
+		resultSeconds = "0" + resultSeconds;
+	}
   resultTime = resultHours + ':' + resultMinutes + ':' + resultSeconds;
 
   return resultTime;
@@ -69,12 +80,16 @@ function secondToDateAndTime(seconds){
 
 	resultYears = Math.floor(seconds / YEAR);
   resultMonths = Math.floor((seconds - (resultYears * YEAR)) / MONTH);
-  resultDays = Math.floor((seconds - (resultYears * YEAR) - (resultMonths * MONTH)) / DAY);
+  resultDays = Math.floor((seconds - ((resultYears * YEAR) + (resultMonths * MONTH))) / DAY);
 	secondsRemainder = seconds - (resultYears * YEAR) - (resultMonths * MONTH) - (resultDays * DAY);
 
-	resultDate = resultYears + " years, " ;
-  resultDate += resultMonths + " month, ";
-  resultDate += resultDays + " days, and time: " + secondsToTime(secondsRemainder);
+	resultDate = resultYears + " лет, " ;
+  resultDate += resultMonths + " месяцев, ";
+  resultDate += resultDays + " дней, ";
+	let timesArray = secondsToTime(secondsRemainder).split(":");
+	resultDate += timesArray[0] + " часов, ";
+	resultDate += timesArray[1] + " минут, ";
+	resultDate += timesArray[2] + " секунд.";
 	return resultDate;
 }
 
@@ -91,140 +106,173 @@ function getResultTask04(){
 function getResultTask05(){
   const ID_RESULT_TASK05 = document.getElementById("resultTask05Label");
   let parseAge = parseInt(document.getElementById("ageInput").value);
-  let resultAge;
+  let resultAgeString;
 
   if (validateNumber(parseAge, "studentAgeErrorMsg")){
-    if (parseAge <= 0) showErrorMessage("A student must already be born.", "studentAgeErrorMsg");
-    if (parseAge > 100) showErrorMessage("Students do not live that much :-D", "studentAgeErrorMsg");
-    if (parseAge % 10 === 1){
-        ID_RESULT_TASK05.innerText = parseAge + " year";
+    if (parseAge <= 0) showErrorMessage("Студент должен быть когда то рождён.", "studentAgeErrorMsg");
+    if (parseAge > 100) showErrorMessage("Студенты так долго не живут :-D", "studentAgeErrorMsg");
+		if (parseAge > 10 && parseAge < 20){
+				resultAgeString = parseAge + " лет";
+				ID_RESULT_TASK05.innerText = resultAgeString;
+				return;
+		}
+		const lastDigit = parseAge % 10;
+    if (lastDigit === 1){
+				resultAgeString = parseAge + " год";
     }
-    if ((parseAge % 10  == 2) ||
-        (parseAge % 10  == 3) ||
-        (parseAge % 10  == 4)){
-          ID_RESULT_TASK05.innerText = parseAge + " of the year";
+
+    if ((lastDigit  >= 2) &&
+        (lastDigit  <= 4)){
+          resultAgeString = parseAge + " года";
         }
-    if ((parseAge % 10  == 0) ||
-        (parseAge % 10  == 5) ||
-        (parseAge % 10  == 6) ||
-        (parseAge % 10  == 7) ||
-        (parseAge % 10  == 8) ||
-        (parseAge % 10  == 9)){
-          ID_RESULT_TASK05.innerText = parseAge + " years";
+
+		if (lastDigit  === 0) resultAgeString = parseAge + " лет";
+
+    if ((lastDigit  >= 5) &&
+        (lastDigit  <= 9)){
+          resultAgeString = parseAge + " лет";
         }
+
+		ID_RESULT_TASK05.innerText = resultAgeString;
   }
 }
 
 function getResultTask06(){
-  let parseDateFirst = Date.parse(document.getElementById("dateCompareFirstInput").value);
-  let parseDateSecond = Date.parse(document.getElementById("dateCompareSecondInput").value);
-	let resultTime, resultSeconds;
+  let parseDateFirst = new Date(document.getElementById("dateCompareFirstInput").value);
+  let parseDateSecond = new Date(document.getElementById("dateCompareSecondInput").value);
+	let diffSeconds;
+	const MILISECONDS = 1000;
 
 	if (isNaN(parseDateFirst) || isNaN(parseDateSecond)){
-		showErrorMessage("Error entering data. Please use the correct date format.", "compareDateErrorMsg");
+		showErrorMessage("Ошибка ввода, пожалуйста соблюдайте заданый формат.", "compareDateErrorMsg");
 		return;
 	}
 	if (parseDateFirst > parseDateSecond){
-		showErrorMessage("You are trying to perform a non-correct comparison.", "compareDateErrorMsg");
-		return;
+			[parseDateFirst , parseDateSecond] = [parseDateSecond , parseDateFirst];
 	}
-	resultSeconds = (parseDateSecond - parseDateFirst) / 1000;
-	document.getElementById("resultTask06Label").innerText = secondToDateAndTime(resultSeconds);
+	diffSeconds = (parseDateSecond.getTime() - parseDateFirst.getTime());
+	document.getElementById("resultTask06Label").innerText = secondToDateAndTime(diffSeconds / MILISECONDS);
+}
+
+function IsValidDate(day, month, year){
+
+	// Check the ranges of month and year
+	if(year < 1000 || year > 3000 || month === 0 || month > 12)
+			return false;
+
+	let monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+
+	// Adjust for leap years
+	if(year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0)){
+		monthLength[1] = 29;
+	}
+
+	// Check the range of the day
+	return day > 0 && day <= monthLength[month - 1];
 }
 
 function getResultTask07(){
-	let inputDate = Date.parse(document.getElementById("dateZodiacInput").value);
-	let birthday = new Date(inputDate);
+	document.getElementById("zodiacErrorMsg").style.display = "none";
+	let inputDate = document.getElementById("dateZodiacInput").value.split("-");
+	const RESULT_LABEL = document.getElementById("resultTask07Label");
+	const ZODIAC_IMG = document.getElementById("zodiacImg");
+
+	//let birthday = new Date(inputDate);
 	const zod_signs = ["Capricorn" , "Aquarius", "Pisces", "Aries",
 	"Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio",
 	"Sagittarius"];
 
-	let day = birthday.getDate();
-	let month = birthday.getMonth();
+	const day = parseInt(inputDate[2]);
+	const month = parseInt(inputDate[1]);
+	const year = parseInt(inputDate[0]);
+
 	let zodiacSign = "";
 
-  if (isNaN(inputDate)){
-    showErrorMessage("Error entering data. Please use the correct date format.", "zodiacErrorMsg");
+  if (!IsValidDate(day, month, year)){
+		RESULT_LABEL.innerText = "";
+		ZODIAC_IMG.src = "";
+    showErrorMessage("Дата введена не верно. Пожалуйста введите корректные данные.", "zodiacErrorMsg");
     return;
   }
 
 	switch(month)
 	{
-		case 0: {//January
+		case 1: {//January
 				 if(day < 20)
 			 		zodiacSign = zod_signs[0];
 				 else
 			 		zodiacSign = zod_signs[1];
 			    }break;
-		case 1: {//February
+		case 2: {//February
 				 if(day < 19)
 			 		zodiacSign = zod_signs[1];
 				 else
 			 		zodiacSign = zod_signs[2];
 				}break;
-		case 2: {//March
+		case 3: {//March
 				 if(day < 21)
 				 	zodiacSign = zod_signs[2];
 				 else
 				 	zodiacSign = zod_signs[3];
 				}break;
-		case 3: {//April
+		case 4: {//April
 				 if(day < 20)
 			 		zodiacSign = zod_signs[3];
 				 else
 			 		zodiacSign = zod_signs[4];
 				}break;
-		case 4: {//May
+		case 5: {//May
 				 if(day < 21)
 			 		zodiacSign = zod_signs[4];
 				 else
 			 		zodiacSign = zod_signs[5];
 				}break;
-		case 5: {//June
+		case 6: {//June
 				 if(day < 21)
 			 		zodiacSign = zod_signs[5];
 				 else
 			 		zodiacSign = zod_signs[6];
 				}break;
-		case 6: {//July
+		case 7: {//July
 				 if(day < 23)
 			 		zodiacSign = zod_signs[6];
 				 else
 			 		zodiacSign = zod_signs[7];
 				}break;
-	 	case 7: {//August
+	 	case 8: {//August
 				 if(day < 23)
 			 		zodiacSign = zod_signs[7];
 				 else
 			 		zodiacSign = zod_signs[8];
 				}break;
-		case 8: {//September
+		case 9: {//September
 				 if(day < 23)
 			 		zodiacSign = zod_signs[8];
 				 else
 			 		zodiacSign = zod_signs[9];
 				}break;
-		case 9: {//October
+		case 10: {//October
 				 if(day < 23)
 			 		zodiacSign = zod_signs[9];
 				 else
 			 		zodiacSign = zod_signs[10];
 				}break;
-		case 10: {//November
+		case 11: {//November
 				 if(day < 22)
 			 		zodiacSign = zod_signs[10];
 				 else
 			 		zodiacSign = zod_signs[11];
 				}break;
-		case 11: {//December
+		case 12: {//December
 				 if(day < 22)
 			 		zodiacSign = zod_signs[11];
-				 else
-			 		zodiacSign = zod_signs[0];
+				 else{
+					zodiacSign = zod_signs[0];
+				 }
 				}break;
 	 }
-	 	document.getElementById("resultTask07Label").innerText = zodiacSign;
-    document.getElementById("zodiacImg").src = "images/zodiac/" + zodiacSign + ".ico";
+	 	RESULT_LABEL.innerText = zodiacSign;
+    ZODIAC_IMG.src = "images/zodiac/" + zodiacSign + ".ico";
 }
 
 function getResultTask08(){
@@ -244,7 +292,7 @@ function getResultTask08(){
 
 	let colorFlag = true;
 	let color = "black";
-  var iDiv = document.createElement('div');
+  let iDiv = document.createElement('div');
   for (let i = 0; i < parseRow; i++ ){
     let rowDiv = document.createElement('div');
     rowDiv.setAttribute('id', 'rowDiv');
@@ -272,38 +320,9 @@ function getResultTask08(){
 		} else {
 			colorFlag = true;
 		}
-
   }
-
-// =======
-// =======
-// >>>>>>> 274fb68b78bdf2a204e5c0705eddc2d8964b89ee
-//   const shessFlag = {
-//     flag = true;
-//   };
-
-//   shessFlag.flipFlag(){
-//     flag = !flag;
-//   }
-
-//   shessFlag.flipFlag();
-//   console.log(shessFlag.flag);
-// <<<<<<< HEAD
-// >>>>>>> 274fb68b78bdf2a204e5c0705eddc2d8964b89ee
-// =======
-// >>>>>>> 274fb68b78bdf2a204e5c0705eddc2d8964b89ee
 }
 
-function sumDigitOnNumber(number){
-  let resultSum
-
-  if ( number == 0){
-    resultSum = 0;
-  } else {
-    resultSum = number % 10 + sumDigitOnNumber(Math.floor(number / 10));
-  }
-  return resultSum;
-}
 
 function getResultTask09(){
   let parseEntrances = parseInt(document.getElementById("entrancesInput").value);
@@ -331,20 +350,52 @@ function getResultTask09(){
 	} else {
 		resultFloor = Math.round(parseflatsResult / parseFlats);
 	}
-
   document.getElementById("resultTask09Label").innerText = `Entrances = ${resultEntrances}, Floors = ${resultFloor}`;
 }
- 
 
-function getResultTask10(){
-  let parseNumber = parseInt(document.getElementById("numberInput").value);
+function sumDigitOnNumber(number){
 
-  if ( !validateNumber(parseNumber, "calculateDigitErrorMsg")){
-    showErrorMessage("Please enter exactly the number!", "studentAgeErrorMsg");
+  if ( number === 0){
+    resultSum = 0;
+  } else {
+    resultSum = number % 10 + sumDigitOnNumber(Math.floor(number / 10));
   }
-  document.getElementById("resultTask10Label").innerText = sumDigitOnNumber(parseNumber);
+  return resultSum;
 }
 
+function getResultTask10(){
+  let parseNumber = parseFloat(document.getElementById("numberInput").value);
+	let resultSum = 0;
+
+	if (parseNumber < 0) parseNumber * (-1);
+
+	let sNumber = parseNumber.toString().split("");
+	let i = 0;
+	for ( i ; i < sNumber.length; i++) {
+		if (sNumber[i] !== ".") {
+			resultSum += parseInt(sNumber[i]);
+		}
+	}
+
+  document.getElementById("resultTask10Label").innerText = resultSum;
+}
+
+function getResultTask11(){
+	const resultHttpDiv = document.getElementById("splitLinkResult");
+	resultHttpDiv.innerText = "";
+	const parceLinks = document.getElementById("httpInput");
+	//const ul = document.createElement("ul");
+	const resultUl = parceLinks.value
+	        .split(/[\s,]/)
+	        .filter(link => !!link)
+	        .map(link => link.replace(/http?:\/\//gi, ''))
+	        .sort()
+	        .reduce((ul,link) =>
+	        	ul += `<li><a href="//${link}">${link}</a></li>`, "");
+						console.log(resultUl);
+	resultHttpDiv.innerHTML = resultUl;
+
+}
 
 //getLinks.fiter(link => !!link);
 // split

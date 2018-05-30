@@ -40,83 +40,122 @@
 
                 <button class="accordion">Task 04</button>
                 <div class="panel" id = "content_task_04">
-                  <input type = "text" value = "Enter time on a second, lpz" id = "secondsInput" size="60"><br>
-                  <button onclick = "getResultTask04()">Format seconds(hh:mm:ss)</button>
+                  <div>
+                      <label>Введите пожалуйста время в секундах</label>
+                  </div>
+                  <input type = "text" value = "60" id = "secondsInput" size="10"><br>
+                  <button onclick = "getResultTask04()">Конвертировать секунды(чч:мм:сс)</button>
                   <br>
                   <label id = "secondsConvertErrorMsg" hidden></label>
-                  The set time is: <label id = "resultTask04Label"></label>
+                  Заданое время является: <label id = "resultTask04Label"></label>
                 </div>
 
                 <button class="accordion">Task 05</button>
                 <div class="panel" id = "content_task_05">
-                  <input type = "text" value = "Enter the student's age, lpz" id = "ageInput" size="60"><br>
-                  <button onclick = "getResultTask05()">Format age</button>
+                  <div>
+                      <label>Введите пожалуйста возраст студента</label>
+                  </div>
+                  <input type = "text" value = "19" id = "ageInput" size="10"><br>
+                  <button onclick = "getResultTask05()">Обработать данные.</button>
                   <br>
                   <label id = "studentAgeErrorMsg" hidden></label>
-                  Age is: <label id = "resultTask05Label"></label>
+                  Студенту: <label id = "resultTask05Label"></label>
                 </div>
 
                 <button class="accordion">Task 06</button>
                 <div class="panel" id = "content_task_06">
-                  Enter dates in the format "October 13, 2014 11:13:00":<br>
+                  <div>
+                      <label>Введите дату в формате: "October 13, 2014 11:13:00":</label>
+                  </div>
                   <input type = "text" value = "October 13, 2014 11:13:00" id = "dateCompareFirstInput" size="60"><br>
                   <input type = "text" value = "October 13, 2014 11:13:00" id = "dateCompareSecondInput" size="60"><br>
                   <label id = "compareDateErrorMsg" hidden></label>
 
-                  <button onclick = "getResultTask06()">Calculate the time interval.</button>
+                  <button onclick = "getResultTask06()">Подсчитать временной интервал.</button>
                   <br>
-                  Between dates passed: <label id = "resultTask06Label"></label>
+                  между датами прошло: <label id = "resultTask06Label"></label>
                 </div>
 
                 <button class="accordion">Task 07</button>
                 <div class="panel" id = "content_task_07">
-                  Enter the date like 2014-12-31, lpz: <br>
-                  <input type = "text" value = "2014-12-31" id = "dateZodiacInput" size="60"><br>
-                  <button onclick = "getResultTask07()">Get my zodiac</button>
+                  <div>
+                      <label>Введите дату в формате 2014-12-31:</label>
+                  </div>
+
+                  <input type = "text" value = "2014-12-28" id = "dateZodiacInput" size="60"><br>
+                  <button onclick = "getResultTask07()">Расчитать знак зодиака</button>
                   <br>
                   <label id = "zodiacErrorMsg" hidden></label>
-                  Zodiac is: <label id = "resultTask07Label"></label><br>
+                  Ваш знак зодиака: <label id = "resultTask07Label"></label><br>
                   <img id = "zodiacImg" src = "">
                 </div>
 
                 <button class="accordion">Task 08</button>
                 <div class="panel" id = "content_task_08">
-                  Enter the size of the chessboard:<br>
+                  <div>
+                      <label>Введите размер шахматной доски:</label>
+                  </div>
                   <input type = "text" value = "2" id = "rowChessBoardInput" size="60"><br>
                   <input type = "text" value = "2" id = "colChessBoardInput" size="60"><br>
                   <label id = "chessErrorMsg" hidden></label>
 
-                  <button onclick = "getResultTask08()">Draw a chessboard.</button>
+                  <button onclick = "getResultTask08()">Отобразить шахматную доску.</button>
                   <br>
                   <div id = "resultTask08">
+
                   </div>
                 </div>
 
                 <button class="accordion">Task 09</button>
                   <div class="panel" id = "content_task_09">
-                  Enter the number of entrances:<br>
-                  <input type = "text" value = "4" id = "entrancesInput" size="60"><br>
-                  Enter the number of flats:<br>
-                  <input type = "text" value = "2" id = "flatsInput" size="60"><br>
-                  Enter the number of floors:<br>
-                  <input type = "text" value = "10" id = "floorsInput" size="60"><br>
-                  Enter the number of flats to count:<br>
-                  <input type = "text" value = "12" id = "flatsResultInput" size="60"><br>
+                  <div>
+                      <label>Количество подьездов:</label>
+                      <input type = "text" value = "4" id = "entrancesInput" size="60">
+                  </div>
+                  <div>
+                      <label>Количество квартир на площадке:</label>
+                      <input type = "text" value = "2" id = "flatsInput" size="60">
+                  </div>
+                  <div>
+                      <label>Количество этажей:</label>
+                      <input type = "text" value = "10" id = "floorsInput" size="60">
+                  </div>
+
+                  <div>
+                      <label>Введите номер квартиры для вычислений:</label>
+                      <input type = "text" value = "12" id = "flatsResultInput" size="60">
+                  </div>
 
                   <label id = "flatsCountErrorMsg" hidden></label>
-
-                  <button onclick = "getResultTask09()">Calculate flats.</button>
+                  <button onclick = "getResultTask09()">Расчитать этаж и подьезд.</button>
                   <br>
                   <label id = "resultTask09Label"></label>
                 </div>
 
                 <button class="accordion">Task 10</button>
                 <div class="panel" id = "content_task_10">
-                  <input type = "text" value = "Enter the number, lpz" id = "numberInput" size="60"><br>
-                  <button onclick = "getResultTask10()">Calculate digit from number</button>
+                  <div>
+                      <label>Введите число:</label>
+                      <input type = "text" value = "11" id = "numberInput" size="60">
+                  </div>
+
+                  <button onclick = "getResultTask10()">Сосчитать сумму цифр.</button>
                   <br>
                   <label id = "calculateDigitErrorMsg" hidden></label>
-                  Sum is: <label id = "resultTask10Label"></label>
+                  Сумма: <label id = "resultTask10Label"></label>
+                </div>
+
+                <button class="accordion">Task 11</button>
+                <div class="panel" id = "content_task_11">
+                  <div>
+                      <label>Введите ссылки через запятую "," :</label><br>
+                      <textarea name="input-textarea" rows="4" cols="62" id = "httpInput"></textarea><br>
+                      <button onclick = "getResultTask11()">Составить список из ссылок.</button>
+                      <label id = "SplitLinkErrorMsg" hidden></label>
+                  </div>
+                  <br>
+                  <div id = "splitLinkResult">
+                  </div>
                 </div>
 
                 <script>
