@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en" dir="ltr">
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
@@ -93,10 +94,9 @@
                 <button class="accordion">Task 08</button>
                 <div class="panel" id = "content_task_08">
                   <div>
-                      <label>Введите размер шахматной доски:</label>
+                      <label>Введите размер шахматной доски в формате "2x2":</label>
                   </div>
-                  <input type = "text" value = "2" id = "rowChessBoardInput" size="60"><br>
-                  <input type = "text" value = "2" id = "colChessBoardInput" size="60"><br>
+                  <input type = "text" value = "2x2" id = "rowAndColChessBoardInput" size="60"><br>
                   <label id = "chessErrorMsg" hidden></label>
 
                   <button onclick = "getResultTask08()">Отобразить шахматную доску.</button>
@@ -109,24 +109,26 @@
                 <button class="accordion">Task 09</button>
                   <div class="panel" id = "content_task_09">
                   <div>
-                      <label>Количество подьездов:</label>
-                      <input type = "text" value = "4" id = "entrancesInput" size="60">
+                      <label>Количество подьездов :</label>
                   </div>
+                  <input type = "text" value = "4" id = "entrancesInput" size="60">
                   <div>
                       <label>Количество квартир на площадке:</label>
-                      <input type = "text" value = "2" id = "flatsInput" size="60">
                   </div>
+                  <input type = "text" value = "2" id = "flatsInput" size="60">
                   <div>
                       <label>Количество этажей:</label>
-                      <input type = "text" value = "10" id = "floorsInput" size="60">
                   </div>
+                  <input type = "text" value = "10" id = "floorsInput" size="60">
 
                   <div>
                       <label>Введите номер квартиры для вычислений:</label>
-                      <input type = "text" value = "12" id = "flatsResultInput" size="60">
+                  </div>
+                  <input type = "text" value = "12" id = "flatsResultInput" size="60">
+                  <div>
+                      <label id = "flatsCountErrorMsg" hidden></label>
                   </div>
 
-                  <label id = "flatsCountErrorMsg" hidden></label>
                   <button onclick = "getResultTask09()">Расчитать этаж и подьезд.</button>
                   <br>
                   <label id = "resultTask09Label"></label>
@@ -149,8 +151,8 @@
                 <div class="panel" id = "content_task_11">
                   <div>
                       <label>Введите ссылки через запятую "," :</label><br>
-                      <textarea name="input-textarea" rows="4" cols="62" id = "httpInput"></textarea><br>
-                      <button onclick = "getResultTask11()">Составить список из ссылок.</button>
+                      <textarea name="input-textarea" onblur="getResultTask11()" rows="4" cols="62" id = "httpInput"></textarea><br>
+                      <!-- <button onclick = "getResultTask11()">Составить список из ссылок.</button> -->
                       <label id = "SplitLinkErrorMsg" hidden></label>
                   </div>
                   <br>

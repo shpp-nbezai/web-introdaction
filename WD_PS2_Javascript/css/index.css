@@ -7,7 +7,7 @@
 }
 
 .header{
-    background-color: green;
+    background-color: #1e90ff;
 }
 
 .content{
@@ -25,16 +25,17 @@
 
 .section{
     flex: 1 1 auto;
-    background-color: yellow;
+    background-color: #2ed573;
     text-align: left;
 }
 
 .footer{
-    background-color: grey;
+    background-color: #57606f;
 }
 
 .accordion {
-    background-color: #eee;
+    /* background-color: #eccc68; #eee; */
+    background-color: #eccc68;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -47,7 +48,8 @@
 }
 
 .active, .accordion:hover {
-    background-color: #ccc;
+    /* background-color: #ccc; */
+    background-color: #ffa502;
 }
 
 .panel {

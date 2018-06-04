@@ -35,12 +35,12 @@ function getResultTask03(){
 
 function validateNumber(inputNumber, errorElementId){
 
-  const isValidInt = x => x && !isNaN(x) && Number.isInteger(x) || x === 0;
+  const IS_VALID_INT = x => x && !isNaN(x) && Number.isInteger(x) || x === 0;
 
   document.getElementById(errorElementId).style.display = "none";
   const MAX_NUMBER_LIMIT = 1000000000;
 
-  if (isValidInt(inputNumber)){
+  if (IS_VALID_INT(inputNumber)){
       if (inputNumber >= 0 && inputNumber < MAX_NUMBER_LIMIT){
         return true;
       } else showErrorMessage("Вы ввели слишком большое или отрицательное число...", errorElementId);
@@ -279,8 +279,18 @@ function getResultTask08(){
 
   let resultDiv = document.getElementById("resultTask08");
   const CHESS_BOARD_SIZE = 480;
-  let parseRow = parseInt(document.getElementById("rowChessBoardInput").value);
-  let parseCol = parseInt(document.getElementById("colChessBoardInput").value);
+	const IS_VALID_INT = x => x && !isNaN(x) && Number.isInteger(x) || x === 0;
+	document.getElementById("chessErrorMsg").style.display = "none";
+
+	let parseInput = document.getElementById("rowAndColChessBoardInput").value;
+	parseInput = parseInput.split("x");
+	let parseRow = parseInt(parseInput[0]);
+	let parseCol = parseInt(parseInput[1]);
+
+	if (!IS_VALID_INT(parseRow) || !IS_VALID_INT(parseCol)) {
+		showErrorMessage("Вы действительно ввели числа?!", "chessErrorMsg");
+		return;
+	}
 
   resultDiv !== null ? (resultDiv.remove()):(null);
   resultDiv = document.createElement('div');
@@ -334,12 +344,12 @@ function getResultTask09(){
        !validateNumber(parseFlats, "flatsCountErrorMsg") &&
        !validateNumber(parseFloors, "flatsCountErrorMsg") &&
        !validateNumber(parseflatsResult, "flatsCountErrorMsg") ){
-    showErrorMessage("Please enter exactly the number!", "flatsCountErrorMsg");
+    showErrorMessage("Пожалуйста введите именно число!", "flatsCountErrorMsg");
   }
 
   let allFlatsCount = parseEntrances * parseFlats * parseFloors;
   if ( allFlatsCount < parseflatsResult) {
-    showErrorMessage("Unfortunately you live on the street!", "flatsCountErrorMsg");
+    showErrorMessage("Похоже эти аппартаменты вне пределов здания!", "flatsCountErrorMsg");
   }
 
   let resultEntrances = Math.ceil(parseflatsResult / (parseFlats *  parseFloors));
@@ -350,7 +360,7 @@ function getResultTask09(){
 	} else {
 		resultFloor = Math.round(parseflatsResult / parseFlats);
 	}
-  document.getElementById("resultTask09Label").innerText = `Entrances = ${resultEntrances}, Floors = ${resultFloor}`;
+  document.getElementById("resultTask09Label").innerText = `Подьезд = ${resultEntrances}, Этаж = ${resultFloor}`;
 }
 
 function sumDigitOnNumber(number){
@@ -384,23 +394,14 @@ function getResultTask11(){
 	const resultHttpDiv = document.getElementById("splitLinkResult");
 	resultHttpDiv.innerText = "";
 	const parceLinks = document.getElementById("httpInput");
-	//const ul = document.createElement("ul");
 	const resultUl = parceLinks.value
 	        .split(/[\s,]/)
 	        .filter(link => !!link)
-	        .map(link => link.replace(/http?:\/\//gi, ''))
+	        .map(link => link.replace(/https?:\/\//gi, ''))
 	        .sort()
 	        .reduce((ul,link) =>
 	        	ul += `<li><a href="//${link}">${link}</a></li>`, "");
-						console.log(resultUl);
+
 	resultHttpDiv.innerHTML = resultUl;
 
 }
-
-//getLinks.fiter(link => !!link);
-// split
-// filter
-// map
-// sort
-// reduse
-//string prototype
