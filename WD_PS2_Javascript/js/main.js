@@ -27,7 +27,7 @@ function getResultTask03() {
 	let sum = "*";
 	let resultString = '';
 
-	for ( i = 0; i < 50; i++ ) {
+	for ( let i = 0; i < 50; i++ ) {
 			resultString += ( sum + "<br>" );
 	    sum += "*";
 	}
