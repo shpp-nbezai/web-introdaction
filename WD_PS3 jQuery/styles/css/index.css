@@ -75,3 +75,8 @@
 .dropdown-button:hover, .dropdown-button:focus {
     background-color: #2980B9;
 }
+
+.button-ico {
+    width: 30px;
+    height: 30px;
+}
