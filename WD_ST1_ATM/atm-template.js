@@ -62,10 +62,10 @@ const ATM = {
   //                replace "###" in messageKey text to the value2
   writeReport: function(method, messageKey, value1, value2) {
     let str = ATM.messages[messageKey];
-    if (value1 !== undefined) {
+    if (value1) {
       str = str.replace("@@@", value1);
     }
-    if (value2 !== undefined) {
+    if (value2) {
       str = str.replace("###", value2);
     }
     console.log(this.getNowTime(false) + " / " + str);

@@ -1,0 +1,65 @@
+.slider {
+  text-align: center;
+  align-items: center;
+}
+
+.slider .slider-indicators {
+  padding: 0;
+}
+
+.slider .slider-previews li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1rem;
+  vertical-align: middle;
+  border: 5px solid transparent;
+}
+
+#previewImg {
+  padding: 0;
+}
+
+.slider .slider-previews li img {
+  display: block;
+}
+
+.slider .slider-previews li.current {
+  border: 5px solid rgba(0,0,0,0.2);
+}
+
+.previewImage {
+  opacity: 0.6;
+}
+
+.previewImage:hover, .previewImage:focus, .active {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: 180px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 27.05%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
