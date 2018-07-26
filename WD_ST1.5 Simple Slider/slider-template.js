@@ -1,25 +1,3 @@
-$( function() {
-  showPreviewImage();
-
-  $( "#fullImg" ).click( function() {
-    $( this ).addClass( 'previewImage' );
-  });
-
-  $( ".previewImage" ).click( function() {
-    currentImageId = $( this ).attr( 'id' );
-    showSlide( currentImageId );
-  });
-
-  $( window ).keyup( function( e ) {
-    let key = e.which | e.keyCode;
-    if ( key === 37 ){ // 37 is left arrow
-      showSlide( --currentImageId );
-    }
-    else if ( key === 39 ){ // 39 is right arrow
-      showSlide( ++currentImageId );
-    }
-  });
-});
 
 const API_URL = 'https://picsum.photos/';
 const BIG_SIZE = '600/400';
@@ -35,44 +13,68 @@ const IMAGES = [
   '?image=1039'
 ];
 
-function showPreviewImage(){
-  const previewImg = document.getElementById( "previewImg" );
-  IMAGES.map( function( item, index ) {
-    const liElement = document.createElement( "li" );
-    liElement.setAttribute( 'class' , 'previewImage' );
-    liElement.setAttribute( 'id' , index );
-    const image = document.createElement( "img" );
-    const link = API_URL + SMALL_SIZE + item;
-    image.setAttribute( "src" , link );
-    liElement.appendChild( image );
-    previewImg.appendChild( liElement );
+$( function() {
+  showPreviewImage();
+
+  $( ".previewImage" ).click( function() {
+    currentImageId = $( this ).children( "img" ).data( "arrImageId" );
+    showSlide( currentImageId );
   });
-  const activePreviewImg = document.getElementById( 0 );
-  activePreviewImg.classList.add('active');
+
+  $( window ).keyup( function( e ) {
+    let key = e.which | e.keyCode;
+    if ( key === 37 ){ // 37 is left arrow
+      showSlide( --currentImageId );
+    }
+    else if ( key === 39 ){ // 39 is right arrow
+      showSlide( ++currentImageId );
+    }
+  });
+});
+
+function showPreviewImage() {
+  jQuery.map( IMAGES, function ( item, index ) {
+    $( "#previewImg" ).
+    append( `<li class = "previewImage"><img src="${ API_URL + SMALL_SIZE + item }" alt="0"></li>` );
+  });
+
+  $( "#previewImg" ).children("li").each( function ( index ) {
+    $( this ).children( "img" ).data( "arrImageId", index );
+  });
+
+  $( "#previewImg" ).find(">:first-child").addClass("active");
 }
 
-function changeSlides( direction ){
+function changeSlides( direction ) {
   showSlide( currentImageId += direction );
 }
 
-function showSlide( index ){
+function checkIndex( index ) {
   if ( index < 0) {
     //( IMAGES.length - 1 ) minus 1 because the array index begins with 0 and the number of elements will overflow.
     currentImageId = index = IMAGES.length - 1;
   }
   //( IMAGES.length - 1 ) minus 1 because the array index begins with 0 and the number of elements will overflow.
   if ( index > (IMAGES.length -1)) {
-  currentImageId = index = 0;
+    currentImageId = index = 0;
   }
+  return index;
+}
+
+function setActiveImage( index ) {
+  $( "#previewImg" ).children("li").each( function () {
+    $( this ).attr( "class", "previewImage" )
+    let itemId = $( this ).children( "img" ).data( "arrImageId" );
+    if ( itemId === index ) {
+      $( this ).addClass( "active" );
+    }
+  });
+}
+
+function showSlide( index ){
+  index = checkIndex( index );
   const link = API_URL + BIG_SIZE + IMAGES[ index ];
   const fullImage = document.getElementById( "fullImg" );
   fullImage.setAttribute( "src", link );
-
-  const previewImages = document.getElementsByClassName( "previewImage" );
-  for ( i = 0; i < previewImages.length; i++ ){
-      previewImages[ i ].className = previewImages[ i ].className.replace( "active", "" );
-  }
-
-  const activePreviewImg = document.getElementById( index );
-  activePreviewImg.classList.add( 'active' );
+  setActiveImage( index );
 }

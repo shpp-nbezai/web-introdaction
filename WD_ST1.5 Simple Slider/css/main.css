@@ -28,7 +28,12 @@
 }
 
 .previewImage {
-  opacity: 0.6;
+  opacity: 0.4;
+}
+
+.active {
+  min-width: 70px;
+  min-height: 70px;
 }
 
 .previewImage:hover, .previewImage:focus, .active {
