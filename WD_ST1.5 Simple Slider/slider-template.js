@@ -3,7 +3,8 @@ const API_URL = 'https://picsum.photos/';
 const BIG_SIZE = '600/400';
 const SMALL_SIZE = '60';
 let currentImageId = 0;
-
+const previewClass = $( ".previewImage" );
+const previewId = $( ".slider-previews" );
 const IMAGES = [
   '?image=1080',
   '?image=1079',
@@ -14,7 +15,13 @@ const IMAGES = [
 ];
 
 $( function() {
-  showPreviewImage();
+  const imageList = IMAGES.reduce(( list, item ) =>
+  ( list + `<li class = "previewImage"><img src="${ API_URL + SMALL_SIZE + item }" alt="0"></li>` ), "");
+  $( ".slider-previews" ).append( imageList ).find( ">:first-child" ).addClass( "active" );
+
+  $( "#previewImg" ).children( "li" ).each( function ( index ) {
+    $( this ).children( "img" ).data( "arrImageId", index );
+  });
 
   $( ".previewImage" ).click( function() {
     currentImageId = $( this ).children( "img" ).data( "arrImageId" );
@@ -23,27 +30,15 @@ $( function() {
 
   $( window ).keyup( function( e ) {
     let key = e.which | e.keyCode;
-    if ( key === 37 ){ // 37 is left arrow
+    if ( key === 37 ) { // 37 is left arrow
       showSlide( --currentImageId );
     }
-    else if ( key === 39 ){ // 39 is right arrow
+    else if ( key === 39 ) { // 39 is right arrow
       showSlide( ++currentImageId );
     }
   });
 });
 
-function showPreviewImage() {
-  jQuery.map( IMAGES, function ( item, index ) {
-    $( "#previewImg" ).
-    append( `<li class = "previewImage"><img src="${ API_URL + SMALL_SIZE + item }" alt="0"></li>` );
-  });
-
-  $( "#previewImg" ).children("li").each( function ( index ) {
-    $( this ).children( "img" ).data( "arrImageId", index );
-  });
-
-  $( "#previewImg" ).find(">:first-child").addClass("active");
-}
 
 function changeSlides( direction ) {
   showSlide( currentImageId += direction );
@@ -62,7 +57,7 @@ function checkIndex( index ) {
 }
 
 function setActiveImage( index ) {
-  $( "#previewImg" ).children("li").each( function () {
+  $( "#previewImg" ).children( "li" ).each( function () {
     $( this ).attr( "class", "previewImage" )
     let itemId = $( this ).children( "img" ).data( "arrImageId" );
     if ( itemId === index ) {
@@ -71,10 +66,9 @@ function setActiveImage( index ) {
   });
 }
 
-function showSlide( index ){
+function showSlide( index ) {
   index = checkIndex( index );
   const link = API_URL + BIG_SIZE + IMAGES[ index ];
-  const fullImage = document.getElementById( "fullImg" );
-  fullImage.setAttribute( "src", link );
+  $( "#fullImg" ).attr( "src", link );
   setActiveImage( index );
 }
