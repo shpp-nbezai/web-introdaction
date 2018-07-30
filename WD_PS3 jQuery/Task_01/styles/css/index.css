@@ -1,3 +1,7 @@
+body ul {
+  margin-top: 0;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -13,10 +17,9 @@
 .container{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  width: 960px;
-  height: 100%;
+  width: 280px;
+  max-height: 300px;
 }
 
 .header{
@@ -30,7 +33,7 @@
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-color: rgb(26,188,156);
+  /* background-color: rgb(26,188,156); */
 }
 
 #panel, #flip {
@@ -40,29 +43,43 @@
   font-size: 16px;
   text-align: left;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 #flip{
+  position: relative;
   display: flex;
   flex-direction: row;
 }
+
 #panel {
-  justify-content: space-around;
-  flex-direction: column;
+  /* justify-content: space-around; */
+  flex-direction: row;
   align-items: center;
   display: none;
 }
 
+.active-user{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding-left: 10px;
+}
+
 .dropdown-button {
+  display: flex;
+  list-style-type: none;
   justify-content: flex-start;
+  align-items: center;
   background-color: #3498DB;
   text-align: left;
   height: 50px;
-  width: 100%;
-  border: none;
-
-  border: 1px solid white;
+  width: 270px;
+  padding-left: 10px;
   border-radius: 4px;
+  vertical-align: middle;
+  font-family: Calibri;
 }
 .mainButton{
   width: 100%;
@@ -73,38 +90,39 @@
   width: 280px;
   background-color: #3498DB;
   color: white;
-  /* padding: 16px; */
   font-size: 16px;
   text-align: left;
   border: none;
   cursor: pointer;
+  margin-left: 0;
+  margin-top: 0 auto;
+  padding-left: 0;
+  padding: 0 auto;
 }
 
 .border{
-  border: 1px solid white;
+  border: 2px solid blue;
   border-radius: 4px;
-  /* padding: 2% 4%; */
 }
 
-.mainButton:focus, .mainButton:hover{
-  outline: 0 !important;
-  border: none;
-  background-color: #2980B9;
-}
 #flip:focus, #flip:hover{
-  border: none;
   background-color: #2980B9;
 }
 
-.dropdown-button:hover, .dropdown-button:focus,{
-  border: none;
+.dropdown-button:hover, .dropdown-button:focus{
   background-color: #2980B9;
+}
+
+.triangle-ico{
+  position: absolute;
+  top: 17px;
+  right: 10px;
 }
 
 .button-ico {
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   margin-right: 15px;
-  margin-bottom: auto;
   width: 30px;
   height: 30px;
 }

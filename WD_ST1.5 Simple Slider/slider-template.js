@@ -27,7 +27,7 @@ $( function() {
   });
 
   $( window ).keyup( function( e ) {
-    let key = e.which | e.keyCode;
+    const key = e.which | e.keyCode;
     if ( key === 37 ) { // 37 is left arrow
       showSlide( --currentImageId );
     }
@@ -57,7 +57,7 @@ function checkIndex( index ) {
 function setActiveImage( index ) {
   $( "#previewImg" ).children( "li" ).each( function () {
     $( this ).attr( "class", "previewImage" )
-    let itemId = $( this ).children( "img" ).data( "arrImageId" );
+    const itemId = $( this ).children( "img" ).data( "arrImageId" );
     if ( itemId === index ) {
       $( this ).addClass( "active" );
     }
