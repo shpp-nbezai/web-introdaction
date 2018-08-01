@@ -4,10 +4,13 @@
   <link rel="stylesheet" type="text/css" href="styles/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="styles/css/index.css">
   <link rel="stylesheet" href="styles/vendors/font-awesome/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+
 </head>
 <body>
   <div class="flex-container">
-    <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
+    <button id="toTop" title="Go to top">Top</button>
     <header class="header">
       <div class="container">
         <div class="logo">
@@ -15,7 +18,7 @@
         </div>
         <div class="navigation-menu">
           <a href="#products" class="menu-caption">PRODUCTS</a>
-          <a href="#about" class="menu-caption">ABOUT US</a>
+          <a href="#aboutUs" class="menu-caption">ABOUT US</a>
           <a href="#contactUs" class="menu-caption">CONTACT US</a>
         </div>
       </div>
@@ -40,7 +43,7 @@
         </div>
       </div>
 
-      <div id = "about" class="aside">
+      <div id = "aboutUs" class="aside">
         <div class="container-3-column">
           <div>
             <div class="content-center">
@@ -215,24 +218,5 @@
         </div>
       </div>
     </div>
-    <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("toTop").style.display = "block";
-      } else {
-        document.getElementById("toTop").style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-
 </body>
 </html>

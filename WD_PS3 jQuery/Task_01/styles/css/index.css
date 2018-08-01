@@ -10,8 +10,8 @@ body ul {
   min-height: 100vh;
   width: 100%;
   flex: auto;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .container{
@@ -19,7 +19,7 @@ body ul {
   flex-direction: column;
   align-items: center;
   width: 280px;
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .header{
@@ -38,7 +38,7 @@ body ul {
 
 #panel, #flip {
   width: 280px;
-  height: 50px;
+  min-height: 50px;
   background-color: #3498DB;
   font-size: 16px;
   text-align: left;
@@ -47,16 +47,17 @@ body ul {
 }
 
 #flip{
+  height: 50px;
   position: relative;
   display: flex;
   flex-direction: row;
 }
 
 #panel {
-  /* justify-content: space-around; */
   flex-direction: row;
   align-items: center;
   display: none;
+  min-height: 350px;
 }
 
 .active-user{
@@ -95,7 +96,7 @@ body ul {
   border: none;
   cursor: pointer;
   margin-left: 0;
-  margin-top: 0 auto;
+  margin-top: 0;
   padding-left: 0;
   padding: 0 auto;
 }
@@ -120,6 +121,7 @@ body ul {
 }
 
 .button-ico {
+  border-radius: 50%;
   display: flex;
   align-items: center;
   margin-right: 15px;

@@ -3,36 +3,42 @@ const NAMES_ARRAY = [
   "Eliot Fu",
   "Stevie Feliciano",
   "Christian",
-  "Matt"
+  "Matt",
+  "Asmund",
+  "Ahiless"
 ];
 const ICO_FILES_SRC = [
-  "styles/images/1.png",
-  "styles/images/2.png",
-  "styles/images/3.png",
-  "styles/images/4.png",
-  "styles/images/5.png"
+  "styles/images/0.jpg",
+  "styles/images/1.jpg",
+  "styles/images/2.jpg",
+  "styles/images/3.jpg",
+  "styles/images/4.jpg",
+  "styles/images/5.jpg",
+  "styles/images/6.jpg",
 ];
 
 $(function() {
-  const animationSpeed = 600;
+  const animationSpeed = 10;
   const flip = $("#flip");
   const panel = $("#panel");
   let userImageIndex = 0;
   createDropdownList();
 
-  flip.click(function() {
-    panel.stop().slideToggle(animationSpeed);
+  flip.on("click", function() {
+    panel.slideToggle(animationSpeed, function() {
+        $(this).stop(true, false);
+    });
   });
 
   $(".dropdown-button").click(function() {
     panel.slideUp(animationSpeed);
-    const liText = $(this).text();
-    const liImg = $(this).find("img").attr("src");
-    $(".active-user").text(liText).prepend(
+    const userName = $(this).text();
+    const userImageScr = $(this).find("img").attr("src");
+    $(".active-user").text(userName).prepend(
       `<img
         class = "button-ico"
-        src="${ liImg }"
-        alt="${ liText }">`
+        src="${ userImageScr }"
+        alt="${ userName }">`
     );
   });
 

@@ -13,26 +13,32 @@ const IMAGES = [
 ];
 
 $( function() {
-  const imageList = IMAGES.reduce(( list, item ) =>
-  ( list + `<li class = "previewImage"><img src="${ API_URL + SMALL_SIZE + item }" alt="0"></li>` ), "");
-  $( ".slider-previews" ).append( imageList ).find( ">:first-child" ).addClass( "active" );
+  const imageList = IMAGES.reduce((list, item) =>
+    list + `
+      <li class = "previewImage">
+        <img
+          src="${ API_URL + SMALL_SIZE + item }"
+          alt="0">
+      </li>
+    `, "");
+  $(".slider-previews").append(imageList).find(">:first-child").addClass("active");
 
-  $( "#previewImg" ).children( "li" ).each( function ( index ) {
-    $( this ).children( "img" ).data( "arrImageId", index );
+  $("#previewImg").children("li").each(function(index) {
+    $(this).children("img").data("arrImageId", index);
   });
 
-  $( ".previewImage" ).click( function() {
-    currentImageId = $( this ).children( "img" ).data( "arrImageId" );
-    showSlide( currentImageId );
+  $(".previewImage").click(function() {
+    currentImageId = $(this).children("img").data("arrImageId");
+    showSlide(currentImageId);
   });
 
-  $( window ).keyup( function( e ) {
+  $(window).keyup(function(e) {
     const key = e.which | e.keyCode;
-    if ( key === 37 ) { // 37 is left arrow
-      showSlide( --currentImageId );
+    if (key === 37) { // 37 is left arrow
+      showSlide(--currentImageId);
     }
-    else if ( key === 39 ) { // 39 is right arrow
-      showSlide( ++currentImageId );
+    else if (key === 39) { // 39 is right arrow
+      showSlide(++currentImageId);
     }
   });
 });
