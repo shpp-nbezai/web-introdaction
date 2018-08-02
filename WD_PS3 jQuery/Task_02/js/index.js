@@ -1,8 +1,5 @@
 $(function() {
   const toTopButton = $("#toTop");
-  const products = $('a[href="#products"]');
-  const aboutUs = $('a[href="#aboutUs"]');
-  const contactUs = $('a[href="#contactUs"]');
   const page = $("html, body");
   const scrollSpeed = 1000;
 
@@ -24,22 +21,17 @@ $(function() {
     }, scrollSpeed);
   });
 
-  products.click(function() {
-    const productsId = $("#products");
-    page.animate({
-      scrollTop: productsId.offset().top
-    }, scrollSpeed);
-  });
-  aboutUs.on( "click", function() {
-    const aboutUsId = $("#aboutUs");
-    page.animate({
-      scrollTop: aboutUsId.offset().top - aboutUsId.height() / 2
-    }, scrollSpeed);
-  });
-  contactUs.on( "click", function() {
-    const contactUsId = $("#contactUs");
-    page.animate({
-      scrollTop: $("#contactUs").offset().top
+  $(".navigation-menu").on("click","a", function (event) {
+    event.preventDefault();
+    page.stop();
+    const navigationId = $(this).attr('href');
+    const elementHeigtht = $(navigationId).height();
+    let scrollOffset = $(navigationId).offset().top;
+    if ($(window).height() > elementHeigtht) {
+      scrollOffset = $(navigationId).offset().top - elementHeigtht / 2;
+    }
+    page.animate( {
+      scrollTop: scrollOffset
     }, scrollSpeed);
   });
 });

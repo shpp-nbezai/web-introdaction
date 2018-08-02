@@ -1,20 +1,32 @@
 const NAMES_ARRAY = [
-  "Jenny Hess",
-  "Eliot Fu",
-  "Stevie Feliciano",
-  "Christian",
-  "Matt",
-  "Asmund",
-  "Ahiless"
-];
-const ICO_FILES_SRC = [
-  "styles/images/0.jpg",
-  "styles/images/1.jpg",
-  "styles/images/2.jpg",
-  "styles/images/3.jpg",
-  "styles/images/4.jpg",
-  "styles/images/5.jpg",
-  "styles/images/6.jpg",
+  {
+    name: "Stemid",
+    image: "styles/images/0.jpg"
+  },
+  {
+    name: "Hector",
+    image: "styles/images/1.jpg"
+  },
+  {
+    name: "Ingvar",
+    image: "styles/images/2.jpg"
+  },
+  {
+    name: "Sigurd",
+    image: "styles/images/3.jpg"
+  },
+  {
+    name: "Duncan",
+    image: "styles/images/4.jpg"
+  },
+  {
+    name: "Asmund",
+    image: "styles/images/5.jpg"
+  },
+  {
+    name: "Achilles",
+    image: "styles/images/6.jpg"
+  }
 ];
 
 $(function() {
@@ -48,20 +60,14 @@ $(function() {
     }
   });
 
-  function getUserImage() {
-    userImageIndex++;
-    if (userImageIndex >= ICO_FILES_SRC.length) userImageIndex = 0;
-    return  ICO_FILES_SRC[userImageIndex];
-  }
-
   function createDropdownList() {
     const userList = NAMES_ARRAY.reduce((list, item) =>
     ( list + `<li class = "dropdown-button">
                 <img
                   class = "button-ico"
-                  src="${ getUserImage() }"
-                  alt="${ item }">
-                ${ item }
+                  src="${ item.image }"
+                  alt="${ item.name }">
+                ${ item.name }
               </li>`
     ), "");
     panel.append(userList);
