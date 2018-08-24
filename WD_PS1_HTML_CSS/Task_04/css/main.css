@@ -4,7 +4,7 @@
 }
 
 .header {
-    background: url("../../images/header.png") no-repeat;
+    background: url("../images/header.png") no-repeat;
     height: 724px;
     color: white;
     font-size: 20px;
@@ -32,12 +32,8 @@
 }
 
 .lease-button {
-    margin-top: 270px;
+    margin-top: 275px;
     text-align: center;
-}
-
-.lease-button > a :hover {
-    text-decoration: none;
 }
 
 .year {
@@ -59,38 +55,39 @@
 }
 
 .bonuses {
-    padding-right: 40px;
     margin-top: 80px;
     border-bottom: 2px solid #CFCFCF;
     font-weight: bold;
     color: #363636;
-    padding-bottom: 115px;
+    padding-bottom: 95px;
 }
 
 .bonus-icon-1 {
-    background: url("../../images/icon1.png") no-repeat 50% 0;
+    background: url("../images/icon1.png") no-repeat 50% 0;
     text-align: center;
 }
 
 .bonus-icon-2 {
-    background: url("../../images/icon2.png") no-repeat 50% 0;
+    margin: 0 35px;
+    background: url("../images/icon2.png") no-repeat 50% 0;
     text-align: center;
 }
 .bonus-icon-3 {
-    background: url("../../images/icon3.png") no-repeat 50% 0;
+    background: url("../images/icon3.png") no-repeat 50% 0;
     text-align: center;
 }
 
 .icon-text {
-    display: block;
-    margin-top: 120px;
-    line-height: 25px;
+    display: inline-block;
+    width: 250px;
+    margin-top: 110px;
+    line-height: 2.5;
     font-size: 16px;
 }
 
 .title-decoration-circle {
     position: absolute;
-    top: 5px;
+    top: 12px;
     left: 40px;
     width: 12px;
     height: 12px;
@@ -100,17 +97,11 @@
     border-radius: 50px;
 }
 
-.categorys-title-2 > .title-decoration-circle {
-    position: absolute;
-    top: 5px;
-    left: 110px;
-}
-
 .categorys-title-1 {
     position: relative;
     text-align: center;
-    margin-top: 90px;
-    margin-left: 100px;
+    margin-top: 85px;
+    margin-left: 170px;
     font-size: 40px;
     font-weight: bold;
     color: #363636;
@@ -118,108 +109,157 @@
 }
 
 .categorys-description-1 {
-    padding-left: 150px;
+    margin-left: 55px;
     margin-top: 35px;
     text-align: left;
     font-size: 16px;
-    line-height: 2;
+    line-height: 2.2;
     color: #363636;
 }
 
-.category {
-    margin-top: 103px;
+.category-row-1 {
+    margin-top: 93px;
     margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.category-row-2 {
+    margin-left: 5px;
 }
 
 .category-background {
     min-height: 259px;
     min-width: 190px;
     color: white;
-    text-align: center;
     font-weight: bold;
     font-size: 16px;
+    padding: 0;
+}
+
+.category-1-title,
+.category-2-title,
+.category-3-title,
+.category-4-title,
+.category-5-title,
+.category-6-title,
+.category-7-title,
+.category-8-title,
+.category-9-title,
+.category-10-title,
+.category-11-title,
+.category-12-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    height: 249px;
+    width: 190px;
+    color: white;
+}
+
+.category-1-title:hover,
+.category-2-title:hover,
+.category-3-title:hover,
+.category-4-title:hover,
+.category-5-title:hover,
+.category-6-title:hover,
+.category-7-title:hover,
+.category-8-title:hover,
+.category-9-title:hover,
+.category-10-title:hover,
+.category-11-title:hover,
+.category-12-title:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .category-1 {
-    background: url("../../images/category1.png") no-repeat;
+    background: url("../images/category1.png") no-repeat;
 }
 
 .category-2 {
-    background: url("../../images/category2.png") no-repeat;
+    background: url("../images/category2.png") no-repeat;
 }
 
 .category-3 {
-    background: url("../../images/category3.png") no-repeat;
+    background: url("../images/category3.png") no-repeat;
 }
 
 .category-4 {
-    background: url("../../images/category4.png") no-repeat;
+    background: url("../images/category4.png") no-repeat;
 }
 
 .category-5 {
-    background: url("../../images/category5.png") no-repeat;
+    background: url("../images/category5.png") no-repeat;
 }
 
 .category-6 {
-    background: url("../../images/category6.png") no-repeat;
+    background: url("../images/category6.png") no-repeat;
 }
 
 .category-7 {
-    background: url("../../images/category7.png") no-repeat;
+    background: url("../images/category7.png") no-repeat;
 }
 
 .category-8 {
-    background: url("../../images/category8.png") no-repeat;
+    background: url("../images/category8.png") no-repeat;
 }
 
 .category-9 {
-    background: url("../../images/category9.png") no-repeat;
+    background: url("../images/category9.png") no-repeat;
 }
 
 .category-10 {
-    background: url("../../images/category10.png") no-repeat;
+    background: url("../images/category10.png") no-repeat;
 }
 
 .category-11 {
-    background: url("../../images/category11.png") no-repeat;
+    background: url("../images/category11.png") no-repeat;
 }
 
 .category-12 {
-    background: url("../../images/category12.png") no-repeat;
+    background: url("../images/category12.png") no-repeat;
+}
+
+.categorys-title-2 > .title-decoration-circle {
+    position: absolute;
+    left: 80px;
 }
 
 .categorys-title-2 {
     position: relative;
     text-align: center;
-    margin-top: 85px;
-    font-size: 35px;
+    margin-top: 75px;
+    margin-left: 80px;
+    font-size: 40px;
     font-weight: bold;
     color: #363636;
     letter-spacing: 2px;
 }
 
 .categorys-description-2 {
-    margin-left: 100px;
-    margin-top: 45px;
+    margin-left: 55px;
+    margin-top: 35px;
     text-align: left;
     font-size: 16px;
-    line-height: 2;
+    line-height: 2.2;
     color: #363636;
 }
 
 .button-container {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 60px;
     margin-bottom: 70px;
 }
 
-.function-button .by-button {
+.function-button.buy-button {
     background: #FBD929;
 }
 
 .function-button {
-    min-width: 260px;
-    min-height: 55px;
+    display: inline-block;
+    width: 260px;
+    height: 55px;
     line-height: 55px;
     vertical-align: middle;
     -moz-border-radius: 50px;
@@ -231,6 +271,11 @@
     text-align: center;
     color: #363636;
     background-color: white;
+}
+
+.function-button:hover {
+    color: #363636;
+    text-decoration: none;
 }
 
 .contacts-font {
