@@ -1,0 +1,636 @@
+@font-face {
+  font-family: BlackJack;
+  src: url('../fonts/black_jack_font/blackjar.TTF');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 auto;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.section-header {
+  width: 100%;
+  height: 40.45rem;
+  margin: 0;
+  text-align: right;
+  background-image: url("../images/blue-pattern.jpg");
+  overflow: hidden;
+}
+
+.section-header_modal {
+  background-color: #f37779;
+  width: 100%;
+  height: 40.45rem;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+}
+
+.show-modal {
+  opacity: 0.8;
+  z-index: 100;
+}
+
+.section-header_modal-menu-buttons {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 10rem 0;
+  text-align: start;
+  margin-left: 40%;
+}
+
+.section-header_modal-menu-buttons div p {
+  margin-left: 1rem;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: right;
+}
+
+.section-header_modal-menu-button {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1rem;
+  color: #4eacdd;
+  text-align: center;
+  height: 3.6rem;
+  width: 3.6rem;
+  border: solid 2px #ffffff;
+  border-radius: 100%;
+  background: #ffffff;
+  outline: none;
+}
+
+.section-header_modal-menu-exit {
+  padding: 1.9rem 0.2rem;
+  flex: 0 0 2rem;
+}
+
+.section-header_content {
+  height: 40.6rem;
+  position: relative;
+  width: 100%;
+  background: url(../images/iphone.png) no-repeat left 5rem bottom -13.4rem;
+}
+
+.section-header h1 {
+  font-family: BlackJack;
+  font-size: 4.4rem;
+  font-weight: 100;
+  text-align: right;
+  color: #ffffff;
+  margin-top: 3.8rem;
+  margin-right: 0.5rem;
+}
+
+.section-header_manifest {
+  font-size: 2rem;
+  margin-right: 0.7rem;
+  line-height: 0.7rem;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: right;
+}
+
+.section-header_manifest i {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.section-header_box {
+  flex-direction: column;
+  margin-left: 0.7rem;
+  margin-top: -2.7rem;
+  padding: 0;
+  width: 100px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0.8rem 0.6rem #00ABEB;
+  border-bottom: solid 4px #0da9e5;
+}
+
+.section-header_box > h2 {
+  padding-top: 1.5rem;
+  font-weight: 100;
+  font-size: 3.2rem;
+  line-height: 1.6rem;
+  font-family: "Kaushan Script";
+  color: #0da9e5;
+}
+.section-header_navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+}
+
+#section-header_download-button {
+  margin-top: 3.1rem;
+  margin-right: 0.7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #ffffff;
+  text-align: center;
+  width: 10.8rem;
+  height: 3.6rem;
+  border: solid 2px #ffffff;
+  border-radius: 2px;
+  background: transparent;
+}
+
+#section-header_menu-modal-button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-right: 0.3rem;
+  z-index: 100;
+}
+
+#section-header_menu-exit-button {
+  top: 2rem;
+}
+
+.section-about-me {
+  height: 40.66rem;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #545454;
+  background: #F4F4F4;
+}
+
+.section-about-me_content {
+  height: 40.66rem;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 0.7rem;
+  padding-top: 7.4rem;
+}
+
+.section-about-me_content h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.section-about_description {
+  width: 35rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.section-about_description-border {
+  width: 35rem;
+  margin-top: 1.8rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  border-left: solid 0.3rem #00A6E2;
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.section-about-me_ipad {
+  position: absolute;
+  right: -13.6rem;
+  bottom: 2.6rem;
+}
+
+#section-about_button {
+  margin-top: 3.4rem;
+  margin-right: 0.7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #00BB8E;
+  text-align: center;
+  width: 10.8rem;
+  height: 3.6rem;
+  border: solid 2px #00BB8E;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.section-portfolio {
+  width: 100%;
+  height: 40.6rem;
+  justify-content: flex-end;
+  overflow-y: hidden;
+}
+
+
+.section-portfolio_content {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #545454;
+  position: relative;
+}
+
+.section-portfolio_content h2 {
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin-top: 6rem;
+  margin-bottom: 1.3rem;
+  margin-right: 5.8rem;
+}
+
+.section-portfolio_content-description {
+  width: 25rem;
+  font-size: 1rem;
+  margin-right: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+#section-portfolio_button {
+  margin-top: 3.1rem;
+  margin-right: 11.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1rem;
+  color: #FF0088;
+  text-align: center;
+  width: 14rem;
+  height: 3.6rem;
+  border: solid 2px #FF0088;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.section-portfolio_content-devices {
+  position: absolute;
+  left: -14.2rem;
+  bottom: -18.5rem;
+}
+
+.section-donate {
+  width: 100%;
+  height: 20.4rem;
+  background-image: url("../images/green-pattern.jpg");
+}
+
+.section-donate_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.section-donate h1 {
+  font-size: 2.3rem;
+  margin-top: 5.8rem;
+}
+
+#section-donate_button {
+  margin-top: 0.7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1rem;
+  color: #ffffff;
+  text-align: center;
+  width: 14rem;
+  height: 3.6rem;
+  border: solid 2px #ffffff;
+  border-radius: 2px;
+  background: transparent;
+}
+
+#section-donate_button  span {
+  font-weight: 900;
+}
+
+.section-contact {
+  width: 100%;
+  background: #F4F4F4;
+  height: 40.4rem;
+}
+
+.section-contact_content {
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-contact_icon-container {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  margin-top: 14.3rem;
+}
+
+.section-contact_icon-container span {
+  display: inline-block;
+}
+
+.section-contact_icon-container > button {
+  margin-top: 0.7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1rem;
+  color: #545454;
+  text-align: center;
+  height: 3.6rem;
+  width: 3.6rem;
+  border: solid 2px #545454;
+  border-radius: 100%;
+  background: transparent;
+  outline: none;
+}
+
+.section-contact_subscription {
+  margin-top: 4.3rem;
+}
+
+.section-contact_subscription {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.section-contact_subscription span {
+  font-weight: 600;
+  color: #545454;
+}
+
+.section-contact_subscription-form {
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-left: 1rem;
+}
+
+.section-contact_subscription-form > input {
+  border: none;
+  width: 150px;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #D3D3D3;
+}
+
+.section-contact_subscription-form submit {
+  border: none;
+  background-color: white;
+  vertical-align: middle;
+  line-height: 0px;
+  color: #00C0F1;
+  border-left: 2px solid #E5E5E5;
+  padding-left: 15px;
+}
+
+footer {
+  color: #7D7D7D;
+  height: 6.3rem;
+  font-size: 0.73rem;
+  font-weight: 600;
+}
+
+footer p {
+  margin-top: 3rem;
+}
+footer p span {
+  color: #00C0F1;
+}
+
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  right: 11.5rem;
+  z-index: 129;
+  font-size: 1.2rem;
+  font-weight: 100;
+  outline: none;
+  cursor: pointer;
+  background-color: #F4F4F4;
+  color: #717171;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+@media only screen and (max-width:959px) {
+  .container{
+    width: 100%;
+  }
+
+  #toTop {
+    right: 5.5rem;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .container{
+    width: 100%;
+  }
+
+  #toTop {
+    right: 5.5rem;
+  }
+
+  .section-portfolio_content-devices {
+    left: -20.2rem;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .section-header h1 {
+    font-size: 4rem;
+  }
+
+  .section-header_manifest {
+    font-size: 1.7rem;
+  }
+
+  #toTop {
+    display: inline-block;
+    bottom: 4rem;
+    right: 1rem;
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width:760px) {
+  .section-header_content {
+    background: url(../images/iphone.png) no-repeat left 50% bottom -19.4rem;
+    text-align: center;
+  }
+
+  #section-header_download-button {
+    margin-right:   0;
+  }
+
+  .section-header h1 {
+    text-align: center;
+  }
+
+  .section-header_manifest {
+    line-height: 1.7rem;
+  }
+
+  .section-about-me_content {
+    height: 40.66rem;
+    padding: 7.4rem 2rem 0;
+    text-align: center;
+  }
+
+  .section-about_description {
+    width: 100%;
+  }
+
+  .section-about_description-border {
+    width: 100%;
+  }
+
+  .section-about-me_ipad {
+    display: none;
+  }
+
+  .section-portfolio_content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-portfolio_content h2 {
+    margin-right: 0;
+  }
+
+  #section-portfolio_button {
+    margin-right: 0;
+  }
+
+  .section-portfolio_content-devices {
+    width: 80vw;
+    height: auto;
+    bottom: -17rem;
+    left: 10vw;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .section-header_content {
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .section-about-me_content {
+    background: url(../images/ipad.png) no-repeat 50% 50%;
+    padding: 1rem 4rem;
+  }
+
+  .section-about-me_content h2 {
+    margin-top: 6rem;
+  }
+
+  .section-about_description,
+  .section-about_description-border,
+  #section-about_button{
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
+
+  .section-contact_subscription {
+    text-align: center;
+  }
+
+  .section-contact_subscription-form {
+    margin: 1rem;
+    display: block;
+  }
+
+  .section-portfolio_content-description {
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width:425px) {
+  .section-header_modal-menu-buttons {
+     margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .section-about-me_content {
+    padding: 1rem 3rem;
+  }
+}
+@media only screen and (max-width:375px) {
+  .section-about-me_content {
+    background: none;
+  }
+
+  .section-donate h1 {
+    font-size: 2rem;
+  }
+
+  .section-contact_icon-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    text-align: -webkit-center;
+  }
+
+  .section-contact_icon-container > button {
+    text-align: -webkit-center;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .section-header h1 {
+    font-size: 3.3rem;
+  }
+
+  .section-header_manifest {
+    font-size: 1.3rem;
+  }
+
+  .section-about-me_content h2 {
+    margin-top: 5rem;
+    font-size: 1.8rem;
+  }
+
+  .section-donate h1 {
+    font-size: 1.6rem;
+  }
+
+  .section-portfolio_content-description {
+    padding: 0 4.5rem;
+    box-sizing: border-box;
+  }
+
+  .section-portfolio_content h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
