@@ -5,10 +5,12 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  position: relative;
 }
 
 button {
   cursor: pointer;
+  outline: none;
 }
 
 .flex-container {
@@ -34,8 +36,8 @@ button {
 
 .section-header_modal {
   background-color: #f37779;
-  width: 100%;
-  height: 40.45rem;
+  width: 100vw;
+  height: 100%;
   opacity: 0;
   position: absolute;
   display: flex;
@@ -526,14 +528,16 @@ footer p span {
   }
 
   #section-portfolio_button {
-    margin-right: 0;
+    margin: 1.1rem 0;
   }
 
   .section-portfolio_content-devices {
-    width: 80vw;
+    width: 600px;
     height: auto;
-    bottom: -17rem;
-    left: 10vw;
+    bottom: -19rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 }
 
@@ -597,12 +601,16 @@ footer p span {
   .section-contact_icon-container {
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 6rem;
     text-align: -webkit-center;
   }
 
   .section-contact_icon-container > button {
     text-align: -webkit-center;
+  }
+
+  #section-about_button {
+    margin-top: 2.5rem;
   }
 }
 
@@ -632,5 +640,9 @@ footer p span {
   .section-portfolio_content h2 {
     font-size: 1.3rem;
     font-weight: 700;
+  }
+
+  #section-about_button {
+    margin-top: 1.5rem;
   }
 }
