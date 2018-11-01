@@ -20,7 +20,7 @@ button {
   padding: 0 auto;
 }
 
-.container{
+.container {
   width: 960px;
   margin: 0 auto;
 }
@@ -334,7 +334,7 @@ button {
 }
 
 .section-contact_content {
-    display: flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
@@ -398,7 +398,7 @@ button {
   color: #D3D3D3;
 }
 
-.section-contact_subscription-form submit {
+.section-contact_subscription-form-submit {
   border: none;
   background-color: white;
   vertical-align: middle;
@@ -442,7 +442,7 @@ footer p span {
 }
 
 @media only screen and (max-width:959px) {
-  .container{
+  .container {
     width: 100%;
   }
 
@@ -452,7 +452,7 @@ footer p span {
 }
 
 @media only screen and (max-width:850px) {
-  .container{
+  .container {
     width: 100%;
   }
 
@@ -558,7 +558,7 @@ footer p span {
 
   .section-about_description,
   .section-about_description-border,
-  #section-about_button{
+  #section-about_button {
     margin-top: 0;
     font-size: 0.9rem;
   }
@@ -580,7 +580,7 @@ footer p span {
 
 @media only screen and (max-width:425px) {
   .section-header_modal-menu-buttons {
-     margin-left: 20%;
+    margin-left: 20%;
   }
 }
 
