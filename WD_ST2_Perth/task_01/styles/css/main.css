@@ -114,6 +114,11 @@ button {
   text-align: right;
 }
 
+.section-header_manifest span {
+  font-style: italic;
+  font-weight: 900;
+}
+
 .section-header_manifest i {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
@@ -214,6 +219,10 @@ button {
   line-height: 1.5;
 }
 
+.section-about_description-border p {
+  font-style: italic;
+}
+
 .section-about-me_ipad {
   position: absolute;
   right: -13.6rem;
@@ -265,6 +274,10 @@ button {
   font-size: 1rem;
   margin-right: 0.4rem;
   margin-top: 0.4rem;
+}
+
+.section-portfolio_content-description p span {
+  font-weight: bold;
 }
 
 #section-portfolio_button {
@@ -512,6 +525,7 @@ footer p span {
 
   .section-about_description-border {
     width: 100%;
+    font-style: italic;
   }
 
   .section-about-me_ipad {
