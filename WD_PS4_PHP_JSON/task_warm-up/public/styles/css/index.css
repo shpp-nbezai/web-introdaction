@@ -1,0 +1,197 @@
+.flex-container {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-items: center;
+  height: 100%;
+  min-height: 100vh;
+  background: #4eacdd;
+}
+
+.container {
+  width: 1260px;
+  justify-content: center;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  background: #3498DB;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header .container {
+  background: transparent;
+}
+
+.chessBoardRow{
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+}
+
+.chessBoardCol{
+  flex: 0 0 auto;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+#resultTask04{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #4eacdd;
+  height: 480px;
+  width: 480px;
+  min-height: 480px;
+  min-width: 480px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.is-visible {
+  visibility: visible;
+  position: relative;
+}
+
+.section-task-04_input {
+  text-align: right;
+  width: 250px;
+}
+
+.section-submit-button {
+  width: 150px;
+  background-color: #3498DB;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  /*margin-left: 0;*/
+  /*margin-top: 0;*/
+  /*padding-left: 0;*/
+  padding: 10px;
+}
+/*===========dropdawn===========*/
+.dropdown-container {
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  max-height: 400px;
+  position: relative;
+  z-index: 20;
+}
+
+#panel, #flip {
+  width: 280px;
+  min-height: 50px;
+  background-color: #3498DB;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  position: absolute;
+}
+
+#flip{
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #2980B9;
+}
+
+#panel {
+  flex-direction: row;
+  align-items: center;
+  display: none;
+  min-height: 300px;
+}
+
+.active-task{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding-left: 10px;
+}
+
+.dropdown-button {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #3498DB;
+  text-align: left;
+  height: 50px;
+  width: 270px;
+  padding-left: 10px;
+  border-radius: 4px;
+  vertical-align: middle;
+  font-family: Calibri;
+  border: solid 1px #2980B9;
+}
+.mainButton{
+  width: 100%;
+  border: none;
+  outline:none;
+}
+.dropdown {
+  width: 280px;
+  background-color: #3498DB;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+  padding: 0 auto;
+}
+
+#flip:focus, #flip:hover{
+  background-color: #2980B9;
+}
+
+.dropdown-button:hover, .dropdown-button:focus{
+  background-color: #2980B9;
+}
+
+.triangle-ico{
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+
+.button-ico {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+#mainIco {
+  width: 30px;
+  height: 30px;
+}

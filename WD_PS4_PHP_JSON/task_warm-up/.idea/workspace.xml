@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f99fb088-efef-4db0-adad-8ec667b955ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_01/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_01/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_01/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/images/android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/images/arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/images/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/images/nplusplus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/images/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_02/styles/vendors/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/.idea/Task_03.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/1280 .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/category9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/icon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/icon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_03/styles/images/icon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/1280 .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/category9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/icon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/icon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/images/icon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS1_HTML_CSS/Task_04/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/images/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_01/styles/vendors/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/images/android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/images/arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/images/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/images/nplusplus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/images/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WD_PS3 jQuery/Task_02/styles/vendors/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1524312327">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="18" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="961234308">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.20" value="2" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="736" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="736" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/action.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/public/action.php" />
+        <option value="$PROJECT_DIR$/app/functions.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9001" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.2" id="703d7265-7c96-4391-88e4-972809dde405" name="wd_ps4_serve.loc" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/public" remote-root="/home/alex/projects/web-introdaction/WD_PS4_PHP_JSON/task_01/public" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
+  <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="127.0.0.2" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1533" />
+    <option name="height" value="875" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="task_01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_01" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_01" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+    <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.php.debug.xdebug.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="wd_ps_4.loc" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="wd_ps4_serve.loc">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f99fb088-efef-4db0-adad-8ec667b955ff" name="Default Changelist" comment="" />
+      <created>1540921912623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540921912623</updated>
+      <workItem from="1540921918834" duration="1825000" />
+      <workItem from="1540927439698" duration="1882000" />
+      <workItem from="1540982056797" duration="4230000" />
+      <workItem from="1540991663861" duration="7099000" />
+      <workItem from="1541003181427" duration="2455000" />
+      <workItem from="1541058678674" duration="2910000" />
+      <workItem from="1541066335823" duration="1488000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21889000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1533" height="875" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19233356" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49899125" visible="true" weight="0.18611111" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50100875" side_tool="true" weight="0.1869806" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
