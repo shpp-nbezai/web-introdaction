@@ -1,8 +1,8 @@
 {
     "Sword": 1,
-    "Ax": 0,
-    "Saber": 0,
-    "Halberd": 0,
-    "Spear": 1,
-    "Mace": 1
+    "Axe": 0,
+    "Saber": 3,
+    "Halberd": 4,
+    "Spear": 3,
+    "Mace": 4
 }

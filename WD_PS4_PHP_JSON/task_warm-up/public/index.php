@@ -41,13 +41,9 @@ session_destroy();
           <p>посчитать сумму чисел от -1000 до 1000</p>
           <br>
           <?php
-          if ( isset($_SESSION['task 01'])) {
-            ?>
-            результат:
-            <?php
-            echo $_SESSION['task 01'];
-          }
-          ?>
+          if ( isset($_SESSION['task 01'] )) :
+            echo 'результат: ' . $_SESSION['task 01'];
+          endif;?>
         </div>
         <input type="text" hidden name="taskName" value="task_1">
         <p><input type="submit" class="section-submit-button"/></p>
@@ -63,13 +59,9 @@ session_destroy();
           </p>
           <br>
           <?php
-          if ( isset($_SESSION['task 02'])) {
-            ?>
-            результат:
-            <?php
-            echo $_SESSION['task 02'];
-          }
-          ?>
+          if ( isset($_SESSION['task 02'] )) :
+            echo 'результат: ' . $_SESSION['task 02'];
+          endif;?>
         </div>
         <input type="text" hidden name="taskName" value="task_2">
         <p><input type="submit" class="section-submit-button"/></p>
@@ -83,13 +75,9 @@ session_destroy();
           <p>вывести на страницу список из 50 элементов вида</p>
           <br>
           <?php
-          if ( isset($_SESSION['task 03'])) {
-            ?>
-            результат:
-            <?php
-            echo $_SESSION['task 03'];
-          }
-          ?>
+          if ( isset($_SESSION['task 03'] )) :
+            echo 'результат: ' . $_SESSION['task 03'];
+          endif;?>
         </div>
         <input type="text" hidden name="taskName" value="task_3">
         <p><input type="submit" class="section-submit-button"/></p>
@@ -119,11 +107,9 @@ session_destroy();
             /> </p>
           <br>
           <div id = "resultTask04">
-            <?php
-            if ( isset($_SESSION['task 04'])) {
-              echo $_SESSION['task 04'];
-            }
-            ?>
+            <?php if ( isset($_SESSION['task 04'] )) :
+                  echo $_SESSION['task 04'];
+            endif;?>
           </div>
         </div>
       </form>
@@ -143,10 +129,9 @@ session_destroy();
           <br>
           <div>
             <?php
-            if ( isset($_SESSION['task 05'])) {
+            if ( isset($_SESSION['task 05'] )) :
               echo $_SESSION['task 05'];
-            }
-            ?>
+            endif;?>
           </div>
           <input type="text" hidden name="taskName" value="task_5">
           <p><input type="submit"
@@ -169,10 +154,9 @@ session_destroy();
                     class="section-submit-button"/> </p>
           <div>
             <?php
-            if ( isset($_SESSION['task 06'])) {
+            if ( isset($_SESSION['task 06'] )) :
               echo $_SESSION['task 06'];
-            }
-            ?>
+            endif;?>
           </div>
         </div>
       </form>

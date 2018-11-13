@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 session_destroy();
 ?>
@@ -15,12 +15,35 @@ session_destroy();
   <script>
     function showList() {
       let xmlhttp = new XMLHttpRequest();
+      const voteList = document.getElementById( "voteList" );
+      let voteArray;
       xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("voteList").innerHTML = this.responseText;
+        if ( this.readyState == 4 && this.status == 200 ) {
+          voteArray = this.responseText;
         }
+        let voteObj = JSON.parse( voteArray );
+          let idCounter = 0;
+          for ( let item in voteObj) {
+            let listItem = document.createElement( 'li' );
+            let vote = document.createElement( 'input' );
+            let description = document.createElement( 'label' );
+
+            vote.setAttribute( 'type', 'radio' );
+            vote.setAttribute( 'class', 'vote-input' );
+            vote.setAttribute( 'id', "input_" + idCounter );
+            vote.setAttribute( 'name', 'vote' );
+            vote.setAttribute( 'placeholder', item );
+            vote.setAttribute( 'value', item );
+
+            description.setAttribute( 'for', "input_" + idCounter )
+            description.innerText = item;
+            listItem.appendChild( vote );
+            listItem.appendChild( description );
+            voteList.appendChild( listItem );
+            idCounter++;
+          }
       };
-      xmlhttp.open("GET", "getList.php" ,true);
+      xmlhttp.open( "GET", "getList.php" ,true );
       xmlhttp.send();
     }
   </script>
@@ -45,10 +68,9 @@ session_destroy();
               value="submit">Голосовать</button>
     </div>
     <p>
-      <?
-      if (isset($_SESSION["errorMsg"])) {
+      <?php if ( isset( $_SESSION["errorMsg"] )) :
         echo $_SESSION["errorMsg"];
-      } ?>
+      endif;?>
     </p>
   </section>
 </div>

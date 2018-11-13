@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 session_destroy();
 ?>
@@ -13,20 +13,17 @@ session_destroy();
   <link rel="stylesheet" href="./styles/css/normalize.css">
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
+    google.charts.load( 'current', {'packages':['corechart']} );
+    google.charts.setOnLoadCallback( drawChart );
 
     function drawChart() {
       let jsonData = google.visualization.arrayToDataTable(
-        JSON.parse('<?
-          echo $_SESSION["jsonData"];
-          ?>')
-      );
+                     JSON.parse( '<?= $_SESSION["jsonData"]; ?>' ));
       let options = {
         title: 'The most effective weapon'
       };
-      let chart = new google.visualization.PieChart(document.getElementById('piechart'));
-      chart.draw(jsonData, options);
+      let chart = new google.visualization.PieChart( document.getElementById( 'piechart' ));
+      chart.draw( jsonData, options );
     }
   </script>
   <title>Vote form</title>
